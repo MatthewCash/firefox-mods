@@ -1,0 +1,147 @@
+:root {
+    --in-content-primary-button-background: #ffb6fa;
+    --in-content-primary-button-background-active: #ffb6fa;
+    --in-content-primary-button-background-active: #ffb6fa;
+}
+
+/* Hide Horizontal Tabs and Titlebar */
+vbox#titlebar {
+    display: none;
+}
+
+/* Hide Vertical Tabs Sidebar Title */
+#sidebar-header {
+    display: none;
+}
+
+/* Hide Foward Button */
+toolbarbutton#forward-button {
+    display: none;
+}
+
+/* Hide Overflow Button */
+toolbarbutton#nav-bar-overflow-button {
+    display: none !important;
+}
+
+/* Hide Application Menu Button */
+toolbarbutton#PanelUI-menu-button {
+    display: none;
+}
+
+/* Hide Star in Omnibox */
+hbox#star-button-box {
+    display: none;
+}
+
+/* Make URL bar taller */
+#urlbar {
+    top: 0 !important;
+    height: 100% !important;
+}
+
+#urlbar[breakout][breakout-extend] {
+    height: auto !important;
+}
+
+/* Remove white line between Vertical tabs and browser content */
+#sidebar-splitter {
+    display: none;
+}
+
+/* Transparent Elements */
+#navigator-toolbox,
+#nav-bar,
+#nav-bar-customization-target,
+#urlbar-container,
+#urlbar,
+#urlbar-background {
+    background-color: transparent !important;
+}
+
+#navigator-toolbox-background {
+    background: linear-gradient(to right, black 260px, transparent 0);
+}
+
+#navigator-toolbox {
+    background-image: unset !important;
+}
+
+/* Background Image */
+#main-window {
+    background-color: black !important;
+    background-position: right top !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+#navigator-toolbox {
+    border: none !important;
+}
+
+/* Remove addressbar outline */
+#urlbar-background {
+    outline: none !important;
+}
+
+/* Sidebar width */
+#sidebar-box {
+    max-width: 280px;
+}
+
+/* Hide shield */
+#tracking-protection-icon-container {
+    display: none;
+}
+
+/* Smaller identity box icon */
+#identity-icon-box {
+    padding: 0 6px !important;
+    margin: 0 !important;
+    height: 16px !important;
+}
+
+#identity-icon {
+    width: 12px !important;
+    height: 12px !important;
+}
+
+#identity-permission-box {
+    padding: 0 4px !important;
+    margin: 0 !important;
+    height: 16px !important;
+}
+
+/* urlbar height */
+#urlbar-container {
+    --urlbar-container-height: 34px !important;
+}
+
+#urlbar {
+    --urlbar-toolbar-height: 34px !important;
+}
+
+/* addressbar dropdown background */
+.urlbarView {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* hide addressbar shadow */
+#urlbar-background {
+    display: none !important;
+}
+
+/* remove addressbar go button */
+#urlbar-go-button {
+    display: none !important;
+}
+
+/* make addressbar clickable at top */
+#urlbar {
+    top: 0 !important;
+}
+
+/* Remove space between buttons on address bar */
+#urlbar-container {
+    margin-left: 0 !important;
+}

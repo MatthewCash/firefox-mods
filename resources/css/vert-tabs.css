@@ -1,0 +1,71 @@
+/* The URL has a query string requiring url-prefix instead of url selector */
+@-moz-document url-prefix("moz-extension://b15fbe3f-384b-47ce-9fd7-b12d1cc39237/sidebar/sidebar.html") {
+    div#tabbar-container {
+        background-color: black;
+    }
+
+    #tabbar {
+        justify-content: space-between;
+    }
+
+    .newtab-action-selector-anchor {
+        display: none !important;
+        height: 0;
+        width: 0;
+    }
+
+    div.newtab-button-box {
+        display: none;
+    }
+
+    tab-item {
+        border-radius: 3.5px;
+    }
+
+    tab-item-substance {
+        padding: 9.95px 0px;
+    }
+
+    tab-item:hover {
+        background-color: #303030;
+    }
+
+    tab-item.active {
+        background-color: rgb(220, 134, 215);
+        transition: background-color 0.2s ease-in;
+    }
+
+    tab-favicon {
+        margin-right: 5px !important;
+    }
+
+    span.highlighter {
+        display: none;
+    }
+
+    tab-closebox {
+        position: absolute !important;
+        left: 15px;
+        opacity: 0 !important;
+    }
+
+    tab-item:hover tab-closebox {
+        opacity: 1 !important;
+    }
+
+    tab-item:hover tab-favicon {
+        opacity: 0;
+    }
+
+    tab-label {
+        line-height: normal;
+    }
+
+    tab-sound-button {
+        margin-right: 4px !important;
+    }
+    
+    .newtab-button-box {
+        display: none !important;
+    }
+}
