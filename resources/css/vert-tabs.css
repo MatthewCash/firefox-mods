@@ -1,5 +1,4 @@
-/* The URL has a query string requiring url-prefix instead of url selector */
-@-moz-document url-prefix("moz-extension://b15fbe3f-384b-47ce-9fd7-b12d1cc39237/sidebar/sidebar.html") {
+@-moz-document regexp("^moz-extension:\/\/.*\/sidebar\/sidebar.html.*$") {
     div#tabbar-container {
         background-color: black;
     }
