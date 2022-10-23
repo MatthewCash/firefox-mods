@@ -147,3 +147,18 @@ hbox#star-button-box {
 #urlbar-container {
     margin-left: 0 !important;
 }
+
+/* Prevent browser popups from glitching */
+#PanelUI-menu-button {
+    display: block !important;
+}
+#PanelUI-menu-button > stack {
+    padding: 0 !important;
+    height: 0;
+}
+#appMenu-notifications-popup {
+    height: 0;
+}
+slot[part=content] {
+    border: none !important;
+}
