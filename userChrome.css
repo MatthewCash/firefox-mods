@@ -152,13 +152,12 @@ hbox#star-button-box {
 #PanelUI-menu-button {
     display: block !important;
 }
-#PanelUI-menu-button > stack {
-    padding: 0 !important;
-    height: 0;
+#PanelUI-menu-button > stack > image {
+    visibility: hidden;
 }
-#appMenu-notifications-popup {
-    height: 0;
+#PanelUI-menu-button:hover > stack > image {
+    visibility: visible;
 }
-slot[part=content] {
-    border: none !important;
+#PanelUI-menu-button label.toolbarbutton-badge {
+    display: none !important;
 }
