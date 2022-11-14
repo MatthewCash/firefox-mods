@@ -162,6 +162,9 @@ hbox#star-button-box {
 #PanelUI-menu-button:hover > stack > image {
     visibility: visible;
 }
+#PanelUI-menu-button[open="true"] > stack > image {
+    visibility: visible;
+}
 #PanelUI-menu-button label.toolbarbutton-badge {
     display: none !important;
 }
