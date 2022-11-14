@@ -22,8 +22,11 @@ toolbarbutton#forward-button {
 }
 
 /* Hide Overflow Button */
-toolbarbutton#nav-bar-overflow-button {
-    display: none !important;
+toolbarbutton#nav-bar-overflow-button > image {
+    color: transparent;
+}
+toolbarbutton#nav-bar-overflow-button:hover > image {
+    color: white;
 }
 
 /* Hide Application Menu Button */
