@@ -99,22 +99,18 @@ hbox#star-button-box {
     display: none;
 }
 
-/* Smaller identity box icon */
-#identity-icon-box {
-    padding: 0 6px !important;
-    margin: 0 !important;
-    height: 16px !important;
+/* Smaller identity/permission boxes */
+#identity-box > box {
+    padding: 0 2px !important;
+}
+#identity-box > box > image {
+    width: 13.6px !important;
+    margin: 0 auto !important;
 }
 
-#identity-icon {
-    width: 12px !important;
-    height: 12px !important;
-}
-
-#identity-permission-box {
-    padding: 0 4px !important;
-    margin: 0 !important;
-    height: 16px !important;
+/* Remove identity box background */
+#identity-icon-box:not(:hover) {
+    background: unset !important;
 }
 
 /* urlbar height */
