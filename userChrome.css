@@ -164,3 +164,8 @@ hbox#star-button-box {
 #PanelUI-menu-button label.toolbarbutton-badge {
     display: none !important;
 }
+
+/* remove background from zoom indicator */
+#urlbar-zoom-button:not(:hover) {
+    background: unset !important;
+}
