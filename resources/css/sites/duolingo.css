@@ -1,0 +1,19 @@
+@-moz-document url-prefix("https://www.duolingo.com") {
+    * {
+        --web-ui_button-background-color: rgb(180, 100, 180) !important;
+        --web-ui_button-border-color: rgb(180, 100, 180) !important;
+        --web-ui_button-color: rgb(180, 100, 180) !important;
+    }
+
+    .-oI84 {
+        color: rgb(220, 134, 215) !important;
+    }
+
+    ._1D8II, .jTP0E, ._3e9O1 {
+        color: white !important;
+    }
+
+    ._3e9O1 {
+        background-color: rgb(160, 90, 160) !important;
+    }
+}

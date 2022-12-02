@@ -1,0 +1,34 @@
+@-moz-document regexp("^https:\/\/.*\.instructure.com") {
+    .StickyButton-styles__root,
+    .ic-app-header__logomark-container,
+    .Button--primary,
+    .btn-primary,
+    .nav-badge {
+        background-color: rgb(160, 90, 160) !important;
+    }
+
+    .Button--primary:hover{
+        background-color: rgb(220, 134, 215) !important;
+    }
+
+    .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-icon-svg {
+        fill: rgb(220, 134, 215) !important;
+    }
+
+    .Grouping-styles__title,
+    a.fbyHH_bGBk,
+    .Button--link,
+    a.fbyHH_bGBk, 
+    button.fbyHH_bGBk {
+        color: rgb(220, 134, 215) !important;
+    }
+
+    .cECYn_bGBk {
+        background-color: rgb(220, 134, 215) !important;
+    }
+
+    .Button--primary, .btn-primary {
+        border-radius: 2em;
+        border-width: 0;
+    }
+}

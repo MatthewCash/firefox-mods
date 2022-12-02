@@ -1,0 +1,5 @@
+@-moz-document url-prefix("https://www.youtube.com") {
+    :link {
+        --yt-endpoint-color: rgb(220, 134, 215) !important;
+    }
+}

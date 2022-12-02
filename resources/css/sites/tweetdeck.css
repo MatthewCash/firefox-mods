@@ -1,0 +1,5 @@
+@-moz-document url-prefix("https://tweetdeck.twitter.com") {
+    a[rel="favorite"] * {
+        color: rgb(220, 134, 215) !important;
+    }
+}

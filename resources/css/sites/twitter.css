@@ -1,0 +1,17 @@
+@-moz-document url-prefix("https://twitter.com") {
+    .r-vkub15 {
+        color: rgb(220, 134, 215) !important;
+    }
+
+    .r-4nw3r4 {
+        background-color: rgb(220, 134, 215) !important;
+    }
+
+    .r-1r4f3zc {
+        background-color: rgb(180, 100, 180) !important;
+    }
+
+    *[style="color: rgb(249, 24, 128);"] {
+        color: rgb(220, 134, 215) !important;
+    }
+}
