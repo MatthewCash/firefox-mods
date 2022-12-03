@@ -1,4 +1,4 @@
-@-moz-document regexp("^https:\/\/.*\.instructure.com") {
+@-moz-document regexp("^https:\/\/.*\.instructure\.com.*$") {
     .StickyButton-styles__root,
     .ic-app-header__logomark-container,
     .Button--primary,

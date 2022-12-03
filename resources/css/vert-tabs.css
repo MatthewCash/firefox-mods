@@ -1,4 +1,4 @@
-@-moz-document regexp("^moz-extension:\/\/.*\/sidebar\/sidebar.html.*$") {
+@-moz-document regexp("^moz-extension:\/\/.*\/sidebar\/sidebar\.html.*$") {
     div#tabbar-container {
         background-color: black;
     }
