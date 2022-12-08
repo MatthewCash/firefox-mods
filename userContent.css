@@ -1,6 +1,6 @@
-@import url("chrome://resources/content/css/vert-tabs.css");
-@import url("chrome://resources/content/css/sites/canvas.css");
-@import url("chrome://resources/content/css/sites/duolingo.css");
-@import url("chrome://resources/content/css/sites/tweetdeck.css");
-@import url("chrome://resources/content/css/sites/twitter.css");
-@import url("chrome://resources/content/css/sites/youtube.css");
+@import "./css/vert-tabs.css";
+@import "./css/sites/canvas.css";
+@import "./css/sites/duolingo.css";
+@import "./css/sites/tweetdeck.css";
+@import "./css/sites/twitter.css";
+@import "./css/sites/youtube.css";

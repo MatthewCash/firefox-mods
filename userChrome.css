@@ -1,4 +1,4 @@
-@import url("chrome://resources/content/css/sidebar.css");
+@import "./css/sidebar.css";
 
 :root {
     --in-content-primary-button-background: #ffb6fa;
