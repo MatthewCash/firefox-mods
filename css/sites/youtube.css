@@ -1,5 +1,17 @@
 @-moz-document url-prefix("https://www.youtube.com") {
+    /* links */
     :link {
         --yt-endpoint-color: rgb(220, 134, 215) !important;
+    }
+
+    #progress, /* thumbnail watch progress */
+    .ytp-scrubber-button, /* video scrubber */
+    .ytp-swatch-background-color {
+        background-color: rgb(220, 134, 215) !important;
+    }
+
+    /* change logo color */
+    yt-icon > svg > g:nth-child(1) > g:nth-child(1) > path:nth-child(1) {
+        fill: rgb(220, 134, 215) !important;
     }
 }
