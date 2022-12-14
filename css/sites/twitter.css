@@ -14,4 +14,9 @@
     *[style="color: rgb(249, 24, 128);"] {
         color: rgb(220, 134, 215) !important;
     }
+
+    /* hide twitter blue */
+    a[aria-label="Twitter Blue"] {
+        display: none !important;
+    }
 }
