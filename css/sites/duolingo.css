@@ -16,4 +16,17 @@
     ._3e9O1 {
         background-color: rgb(160, 90, 160) !important;
     }
+
+    /* check button */
+    ._3HhhB {
+        background-color: rgb(220, 134, 215) !important;
+    }
+    ._3HhhB::before {
+        display: none;
+    }
+
+    ._1Zm5f, /* correct icon */
+    ._29maR /* report, discuss icons*/ {
+        filter: hue-rotate(220deg);
+    }
 }
