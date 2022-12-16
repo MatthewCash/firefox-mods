@@ -31,4 +31,9 @@
         border-radius: 2em;
         border-width: 0;
     }
+
+    /* recolor focus outlines */
+    *:focus::before {
+        border-color: rgb(220, 134, 215) !important;
+    }
 }
