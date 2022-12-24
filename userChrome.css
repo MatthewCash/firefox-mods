@@ -152,13 +152,13 @@ hbox#star-button-box {
     display: block !important;
     padding-right: 0 !important;
 }
-#PanelUI-menu-button > stack > image {
+#PanelUI-menu-button > stack > image, #unified-extensions-button > image {
     visibility: hidden;
 }
-#PanelUI-menu-button:hover > stack > image {
+#PanelUI-menu-button:hover > stack > image, #unified-extensions-button:hover > image  {
     visibility: visible;
 }
-#PanelUI-menu-button[open="true"] > stack > image {
+#PanelUI-menu-button[open="true"] > stack > image, #unified-extensions-button[open="true"] > image  {
     visibility: visible;
 }
 #PanelUI-menu-button label.toolbarbutton-badge {
