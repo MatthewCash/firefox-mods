@@ -30,4 +30,10 @@
     ._29maR /* report, discuss icons*/ {
         filter: hue-rotate(220deg);
     }
+
+    /* hide super ads */
+    a._3E4oM._3jIW4._3zucw,
+    div.Ekspr._3ZuGY {
+        display: none !important;
+    }
 }
