@@ -20,6 +20,7 @@
     /* check button */
     ._3HhhB {
         background-color: rgb(220, 134, 215) !important;
+        color: white !important;
     }
     ._3HhhB::before {
         display: none;
