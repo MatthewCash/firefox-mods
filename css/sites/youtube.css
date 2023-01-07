@@ -28,4 +28,9 @@
     yt-mealbar-promo-renderer {
         display: none !important;
     }
+
+    /* make header, background black */
+    * {
+        --yt-spec-base-background: black !important;
+    }
 }
