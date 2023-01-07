@@ -23,4 +23,9 @@
     .ytp-swatch-color {
         color: rgb(220, 134, 215) !important;
     }
+
+    /* hide promotions */
+    yt-mealbar-promo-renderer {
+        display: none !important;
+    }
 }
