@@ -9,7 +9,8 @@
     .ytp-swatch-background-color,
     .ytp-chrome-controls .ytp-button[aria-pressed]::after /* caption indicator */,
     .ytp-settings-button::after, /* quality indicator */
-    .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox /* checkboxes */ {
+    .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox, /* checkboxes */
+    .badge-style-type-live-now-alternate /* live indicator */ {
         background-color: rgb(220, 134, 215) !important;
     }
 
