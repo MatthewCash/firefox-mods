@@ -42,4 +42,9 @@
         border-radius: 40px !important;
         border: 1px solid var(--ytd-searchbox-legacy-border-color) !important;
     }
+
+    /* hide voice search button */
+    #voice-search-button {
+        display: none;
+    }
 }
