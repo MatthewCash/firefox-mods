@@ -33,4 +33,13 @@
     * {
         --yt-spec-base-background: black !important;
     }
+
+    /* hide search button */
+    #search-icon-legacy {
+        display: none;
+    }
+    #container.style-scope.ytd-searchbox {
+        border-radius: 40px !important;
+        border: 1px solid var(--ytd-searchbox-legacy-border-color) !important;
+    }
 }
