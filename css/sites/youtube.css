@@ -52,4 +52,11 @@
     #buttons > ytd-topbar-menu-button-renderer:nth-child(1) {
         display: none !important;
     }
+
+    /* hide join, share, donation buttons */
+    #sponsor-button,
+    button[aria-label="Thanks"],
+    button[aria-label="Share"] {
+        display: none !important;
+    }
 }
