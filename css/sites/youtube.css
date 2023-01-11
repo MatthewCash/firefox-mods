@@ -47,4 +47,9 @@
     #voice-search-button {
         display: none;
     }
+
+    /* hide create button */
+    #buttons > ytd-topbar-menu-button-renderer:nth-child(1) {
+        display: none !important;
+    }
 }
