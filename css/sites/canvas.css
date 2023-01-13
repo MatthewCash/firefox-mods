@@ -41,4 +41,12 @@
     button {
         border: none !important;
     }
+
+    /* change hover popup color */
+    .menu-item__text {
+        background-color: rgb(220, 134, 215) !important;
+    }
+    .menu-item__text::after {
+        border-right-color: rgb(220, 134, 215) !important;
+    }
 }
