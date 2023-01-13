@@ -36,4 +36,9 @@
     *:focus::before {
         border-color: rgb(220, 134, 215) !important;
     }
+
+    /* remove button border */
+    button {
+        border: none !important;
+    }
 }
