@@ -1,5 +1,21 @@
 @-moz-document url-prefix("https://tweetdeck.twitter.com") {
-    a[rel="favorite"] * {
+    .r-l5o3uw, *[style="background-color: rgb(0, 111, 214);"],
+    *[style="background-color: rgb(29, 155, 240); border-color: rgba(0, 0, 0, 0);"] {
+        background-color: rgb(220, 134, 215) !important;
+        border-color: rgb(220, 134, 215)  !important;
+    }
+
+    .r-1vtznih {
+        background-color: rgb(180, 100, 180) !important;
+    }
+
+    /* change likes color */
+    div[style="color: rgb(249, 24, 128);"] {
+        color: rgb(220, 134, 215) !important;
+    }
+
+    /* change verified badge */
+        .r-1cvl2hr, *[style="color: rgb(29, 155, 240);"] {
         color: rgb(220, 134, 215) !important;
     }
 }
