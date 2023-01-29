@@ -50,4 +50,13 @@
     .menu-item__text::after {
         border-right-color: rgb(220, 134, 215) !important;
     }
+
+    /* change text input colors */
+    iframe#textentry_text_ifr, .tox-edit-area, textarea:focus {
+        border-color: rgb(220, 134, 215) !important;
+        outline: none !important;
+    }
+    #textentry_text_statusbar span {
+        color: rgb(220, 134, 215) !important;
+    }
 }
