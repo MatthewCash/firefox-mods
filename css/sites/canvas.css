@@ -3,11 +3,12 @@
     .ic-app-header__logomark-container,
     .Button--primary,
     .btn-primary,
-    .nav-badge {
+    .nav-badge,
+    button#submit-button {
         background-color: rgb(160, 90, 160) !important;
     }
 
-    .Button--primary:hover{
+    .Button--primary:hover {
         background-color: rgb(220, 134, 215) !important;
     }
 
