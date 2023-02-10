@@ -71,6 +71,18 @@
         border-right-color: var(--site-accent-color) !important;
     }
 
+    /* change submission type colors */
+    .fOyUs_cLjf {
+        border-color: var(--site-accent-color) !important;
+    }
+    div.submission-type-icon-contents.fOyUs_NGNZ {
+        background-color: var(--site-accent-color) !important;
+    }
+    div.submission-type-icon-contents.fOyUs_kXoP .fQfxa_biBD > svg,
+    div.submission-type-icon-contents.fOyUs_kXoP .fQfxa_biBD > div > span {
+        color: var(--site-accent-color) !important;
+    }
+
     /* change text input colors */
     iframe#textentry_text_ifr, .tox-edit-area, textarea:focus {
         border-color: var(--site-accent-color) !important;
