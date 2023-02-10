@@ -1,7 +1,16 @@
 @-moz-document url-prefix("https://www.youtube.com") {
+    :root {
+        --site-hue: var(--global-hue);
+        --site-saturation: var(--global-saturation);
+        --site-lightness: var(--global-lightness);
+        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
+        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
+        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+    }
+
     /* links */
     :link {
-        --yt-endpoint-color: rgb(220, 134, 215) !important;
+        --yt-endpoint-color: var(--site-accent-color) !important;
     }
 
     #progress, /* thumbnail watch progress */
@@ -11,17 +20,17 @@
     .ytp-settings-button::after, /* quality indicator */
     .ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox, /* checkboxes */
     .badge-style-type-live-now-alternate /* live indicator */ {
-        background-color: rgb(220, 134, 215) !important;
+        background-color: var(--site-accent-color) !important;
     }
 
     /* change logo color */
     yt-icon > svg > g:nth-child(1) > g:nth-child(1) > path:nth-child(1) {
-        fill: rgb(220, 134, 215) !important;
+        fill: var(--site-accent-color) !important;
     }
 
     /* menu quality indicators */
     .ytp-swatch-color {
-        color: rgb(220, 134, 215) !important;
+        color: var(--site-accent-color) !important;
     }
 
     /* hide promotions */

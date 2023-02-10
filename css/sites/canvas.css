@@ -1,19 +1,35 @@
 @-moz-document regexp("^https:\/\/.*\.instructure\.com.*$") {
+    :root {
+        --site-hue: var(--global-hue);
+        --site-saturation: var(--global-saturation);
+        --site-lightness: var(--global-lightness);
+        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
+        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
+        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+    }
+
     .StickyButton-styles__root,
     .ic-app-header__logomark-container,
     .Button--primary,
     .btn-primary,
     .nav-badge,
-    button#submit-button {
-        background-color: rgb(160, 90, 160) !important;
+    button#submit-button,
+    .sJGfW_bGBk.sJGfW_cSen,
+    .sJGfW_bGBk:active,
+    .sJGfW_bGBk:focus,
+    .sJGfW_bGBk:hover,
+    .sJGfW_bGBk[aria-expanded="true"] {
+        background-color: var(--site-accent-color-dark) !important;
+        color: white !important;
+        border: none !important;
     }
 
     .Button--primary:hover {
-        background-color: rgb(220, 134, 215) !important;
+        background-color: var(--site-accent-color) !important;
     }
 
     .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-icon-svg {
-        fill: rgb(220, 134, 215) !important;
+        fill: var(--site-accent-color) !important;
     }
 
     .Grouping-styles__title,
@@ -21,11 +37,11 @@
     .Button--link,
     a.fbyHH_bGBk, 
     button.fbyHH_bGBk {
-        color: rgb(220, 134, 215) !important;
+        color: var(--site-accent-color) !important;
     }
 
     .cECYn_bGBk {
-        background-color: rgb(220, 134, 215) !important;
+        background-color: var(--site-accent-color) !important;
     }
 
     .Button--primary, .btn-primary {
@@ -35,7 +51,7 @@
 
     /* recolor focus outlines */
     *:focus::before {
-        border-color: rgb(220, 134, 215) !important;
+        border-color: var(--site-accent-color) !important;
     }
 
     /* remove button border */
@@ -45,18 +61,18 @@
 
     /* change hover popup color */
     .menu-item__text {
-        background-color: rgb(220, 134, 215) !important;
+        background-color: var(--site-accent-color) !important;
     }
     .menu-item__text::after {
-        border-right-color: rgb(220, 134, 215) !important;
+        border-right-color: var(--site-accent-color) !important;
     }
 
     /* change text input colors */
     iframe#textentry_text_ifr, .tox-edit-area, textarea:focus {
-        border-color: rgb(220, 134, 215) !important;
+        border-color: var(--site-accent-color) !important;
         outline: none !important;
     }
     #textentry_text_statusbar span {
-        color: rgb(220, 134, 215) !important;
+        color: var(--site-accent-color) !important;
     }
 }

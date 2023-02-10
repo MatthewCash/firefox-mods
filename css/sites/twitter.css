@@ -1,16 +1,25 @@
 @-moz-document url-prefix("https://twitter.com") {
+    :root {
+        --site-hue: var(--global-hue);
+        --site-saturation: var(--global-saturation);
+        --site-lightness: var(--global-lightness);
+        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
+        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
+        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+    }
+
     .r-1cvl2hr, *[style="color: rgb(29, 155, 240);"] {
-        color: rgb(220, 134, 215) !important;
+        color: var(--site-accent-color) !important;
     }
 
     .r-l5o3uw, *[style="background-color: rgb(0, 111, 214);"],
     *[style="background-color: rgb(29, 155, 240); border-color: rgba(0, 0, 0, 0);"] {
-        background-color: rgb(220, 134, 215) !important;
-        border-color: rgb(220, 134, 215)  !important;
+        background-color: var(--site-accent-color) !important;
+        border-color: var(--site-accent-color) !important;
     }
 
     .r-1vtznih {
-        background-color: rgb(180, 100, 180) !important;
+        background-color: var(--site-accent-color-dark) !important;
     }
 
     /* hide twitter blue */

@@ -1,11 +1,20 @@
+:root {
+    --global-hue: 300;
+    --global-saturation: 60%;
+    --global-lightness: 70%;
+    --global-accent-color: hsl(var(--global-hue), var(--global-saturation), var(--global-lightness));
+    --global-accent-color-dark: hsl(var(--global-hue), var(--global-saturation), calc(var(--global-lightness) - 5%));
+    --global-accent-color-darker: hsl(var(--global-hue), var(--global-saturation), calc(var(--global-lightness) - 10%));
+}
+
 a, :link {
-    color: rgb(220, 134, 215) !important;
+    color: var(global-accent-color) !important;
 }
 
 ::-moz-selection {
-    background: rgb(200, 104, 200) !important;
+    background: var(--global-accent-color-dark) !important;
 }
 
 * {
-    accent-color: rgb(200, 104, 200) !important;
+    accent-color: var(--global-accent-color-dark) !important;
 }
