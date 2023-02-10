@@ -56,6 +56,10 @@
 
     /* remove button border */
     button {
+
+    /* remove button border and set text color to white */
+    button, a.Button {
+        color: white !important;
         border: none !important;
     }
 
