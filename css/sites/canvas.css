@@ -91,4 +91,12 @@
     #textentry_text_statusbar span {
         color: var(--site-accent-color) !important;
     }
+
+    /* remove outlines */
+    button, a.btn {
+        box-shadow: none !important;
+    }
+    * {
+        outline: none !important;;
+    }
 }
