@@ -22,8 +22,9 @@
         color: white !important;
     }
 
+    /* (in)correct bottom banner */
     ._3e9O1 {
-        background-color: rgb(160, 90, 160) !important;
+        background-color: unset !important;
     }
 
     /* check button */
