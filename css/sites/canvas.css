@@ -89,7 +89,7 @@
     }
 
     /* change text input colors */
-    iframe#textentry_text_ifr, .tox-edit-area, textarea:focus {
+    iframe#textentry_text_ifr, .tox-edit-area, textarea:focus, input {
         border-color: var(--site-accent-color) !important;
         outline: none !important;
     }
