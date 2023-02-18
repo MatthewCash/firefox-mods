@@ -54,13 +54,8 @@
         border-color: var(--site-accent-color) !important;
     }
 
-    /* make backgrounds dark */
-    #content,
-    .header-bar,
-    tr {
-        background-color: black !important;
-        color: white !important;
-    }
+    /* remove button border */
+    button {
 
     /* remove button border and set text color to white */
     button, a.Button {
