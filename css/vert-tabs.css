@@ -68,4 +68,9 @@
     .newtab-button-box {
         display: none !important;
     }
+
+    /* change font to Aurebesh */
+    span {
+        font-family: "Aurebesh", sans-serif !important;
+    }
 }
