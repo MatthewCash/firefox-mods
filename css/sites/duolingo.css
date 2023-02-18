@@ -46,4 +46,9 @@
     div.Ekspr._3ZuGY {
         display: none !important;
     }
+
+    /* progressbar messages */
+    ._26kJ0._2FR4x {
+        color: var(--site-accent-color-dark) !important;
+    }
 }
