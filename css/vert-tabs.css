@@ -73,4 +73,9 @@
     span {
         font-family: "Aurebesh", sans-serif !important;
     }
+
+    /* align tab title with icon */
+    span.label-content {
+        vertical-align: baseline !important;
+    }
 }
