@@ -8,7 +8,7 @@
 }
 
 a, :link {
-    color: var(global-accent-color) !important;
+    color: var(--global-accent-color) !important;
 }
 
 ::-moz-selection {
