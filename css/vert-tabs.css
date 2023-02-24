@@ -1,4 +1,13 @@
 @-moz-document regexp("^moz-extension:\/\/.*\/sidebar\/sidebar\.html.*$") {
+    :root {
+        --hue: var(--system-hue);
+        --saturation: var(--system-saturation);
+        --lightness: var(--system-lightness);
+        --tabs-accent-color: hsl(var(--hue), var(--saturation), var(--lightness));
+        --tabs-accent-color-dark: hsl(var(--hue), var(--saturation), calc(var(--lightness) - 5%));
+        --tabs-accent-color-darker: hsl(var(--hue), var(--saturation), calc(var(--lightness) - 10%));
+    }
+
     div#tabbar-container {
         background-color: black;
     }
@@ -31,7 +40,7 @@
     }
 
     tab-item.active {
-        background-color: rgb(220, 134, 215);
+        background-color: var(--tabs-accent-color);
         transition: background-color 0.2s ease-in;
     }
 
