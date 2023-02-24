@@ -7,7 +7,7 @@
             const inNewTab = ['about:newtab', 'about:blank'].includes(window.gBrowser.currentURI.spec);
 
             document.querySelector('#tabbrowser-tabpanels').style.visibility = inNewTab ? 'hidden' : 'visible';
-            document.querySelector('#main-window').style.backgroundImage = inNewTab ? 'url("chrome://resources/content/images/background.svg")' : null;
+            document.querySelector('#main-window').style.backgroundImage = inNewTab ? 'url("chrome://mods/content/resources/images/background.svg")' : null;
             document.querySelector('#tabbrowser-tabbox').style['-moz-window-dragging'] = inNewTab ? 'drag' : 'no-drag';
 
             const tabCount = window.gBrowser.tabs.length;
