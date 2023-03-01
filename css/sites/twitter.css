@@ -26,4 +26,9 @@
     a[aria-label="Twitter Blue"] {
         display: none !important;
     }
+
+    /* verified badge */
+    svg[aria-label="Verified account"] * {
+        fill:  var(--site-accent-color) !important;
+    }
 }
