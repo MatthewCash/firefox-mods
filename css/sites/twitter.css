@@ -31,4 +31,9 @@
     svg[aria-label="Verified account"] * {
         fill:  var(--site-accent-color) !important;
     }
+
+    /* likes */
+    div[style="color: rgb(249, 24, 128);"] {
+        color: var(--site-accent-color) !important;
+    }
 }
