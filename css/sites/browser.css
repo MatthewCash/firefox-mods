@@ -1,0 +1,7 @@
+:root {
+    --in-content-primary-button-background: var(--global-accent-color) !important;
+    --in-content-primary-button-background-hover: var(--global-accent-color-dark) !important;
+    --in-content-primary-button-background-active: var(--global-accent-color-darker) !important;
+    --in-content-background-color: black !important;
+    --in-content-page-background: var(--in-content-background-color) !important;
+}
