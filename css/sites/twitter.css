@@ -36,4 +36,9 @@
     div[style="color: rgb(249, 24, 128);"] {
         color: var(--site-accent-color) !important;
     }
+
+    /* dm selection indicator */
+    .r-1pbtemp {
+        border-right-color: var(--site-accent-color) !important;
+    }
 }
