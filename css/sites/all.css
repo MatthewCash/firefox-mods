@@ -18,3 +18,7 @@ a, :link {
 * {
     accent-color: var(--global-accent-color-dark) !important;
 }
+
+html {
+    background-color: black;
+}
