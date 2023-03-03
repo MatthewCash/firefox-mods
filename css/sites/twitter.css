@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://twitter.com") {
+@-moz-document regexp("^https:\/\/(tweetdeck\.)?twitter\.com.*$") {
     :root {
         --site-hue: var(--global-hue);
         --site-saturation: var(--global-saturation);
