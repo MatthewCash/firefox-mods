@@ -41,4 +41,9 @@
     .r-1pbtemp {
         border-right-color: var(--site-accent-color) !important;
     }
+
+    /* progress spinner */
+    div[role="progressbar"] > div > svg > circle {
+        stroke: var(--site-accent-color) !important;
+    }
 }
