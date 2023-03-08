@@ -8,95 +8,33 @@
         --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
     }
 
-    .StickyButton-styles__root,
-    .ic-app-header__logomark-container,
-    .Button--primary,
-    .btn-primary,
-    .nav-badge,
-    button#submit-button,
-    .sJGfW_bGBk.sJGfW_cSen,
-    .sJGfW_bGBk:active,
-    .sJGfW_bGBk:focus,
-    .sJGfW_bGBk:hover,
-    .sJGfW_bGBk[aria-expanded="true"] {
-        background-color: var(--site-accent-color-dark) !important;
-        color: white !important;
-        border: none !important;
-    }
-
-    .Button--primary:hover {
-        background-color: var(--site-accent-color) !important;
-    }
-
-    .ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-icon-svg {
-        fill: var(--site-accent-color) !important;
-    }
-
-    .Grouping-styles__title,
-    a.fbyHH_bGBk,
-    .Button--link,
-    a.fbyHH_bGBk, 
-    button.fbyHH_bGBk {
-        color: var(--site-accent-color) !important;
-    }
-
-    .cECYn_bGBk {
-        background-color: var(--site-accent-color) !important;
-    }
-
-    .Button--primary, .btn-primary {
-        border-radius: 2em;
-        border-width: 0;
-    }
-
-    /* recolor focus outlines */
-    *:focus::before {
-        border-color: var(--site-accent-color) !important;
-    }
-
-    /* remove button border */
-    button {
-
-    /* remove button border and set text color to white */
-    button, a.Button {
-        color: white !important;
-        border: none !important;
-    }
-
-    /* change hover popup color */
-    .menu-item__text {
-        background-color: var(--site-accent-color) !important;
-    }
-    .menu-item__text::after {
-        border-right-color: var(--site-accent-color) !important;
-    }
-
-    /* change submission type colors */
-    .fOyUs_cLjf {
-        border-color: var(--site-accent-color) !important;
-    }
-    div.submission-type-icon-contents.fOyUs_NGNZ {
-        background-color: var(--site-accent-color) !important;
-    }
-    div.submission-type-icon-contents.fOyUs_kXoP .fQfxa_biBD > svg,
-    div.submission-type-icon-contents.fOyUs_kXoP .fQfxa_biBD > div > span {
-        color: var(--site-accent-color) !important;
-    }
-
-    /* change text input colors */
-    iframe#textentry_text_ifr, .tox-edit-area, textarea:focus, input {
-        border-color: var(--site-accent-color) !important;
-        outline: none !important;
-    }
-    #textentry_text_statusbar span {
-        color: var(--site-accent-color) !important;
-    }
-
-    /* remove outlines */
-    button, a.btn {
-        box-shadow: none !important;
-    }
-    * {
-        outline: none !important;;
+    html {
+        --ic-brand-primary: var(--site-accent-color) !important;
+        --darkreader-bg--ic-brand-primary: var(--site-accent-color) !important;
+        --darkreader-bg--ic-brand-button--primary-bgd-darkened-5: var(--site-accent-color) !important;
+        --darkreader-bg--ic-brand-global-nav-menu-item__text-color--active: var(--site-accent-color) !important;
+        --darkreader-bg--ic-brand-global-nav-logo-bgd: var(--site-accent-color) !important;
+        --darkreader-bg--ic-link-color: var(--site-accent-color) !important;
+        --darkreader-bg--feqxT-background: var(--site-accent-color) !important;
+        --darkreader-bg--feqxT-backgroundHover: var(--site-accent-color-dark) !important;
+        --darkreader-bg--XOwIb-defaultSelectedBorderColor: var(--site-accent-color) !important;
+        --darkreader-bg--XOwIb-defaultSelectedBorderColor: var(--site-accent-color) !important;
+        --darkreader-bg--cECYn-colorPrimary: var(--site-accent-color) !important;
+        --darkreader-bg--sJGfW-activeBackground: var(--site-accent-color) !important;
+        --darkreader-bg--fQfxa-primaryGhostHoverBackground: var(--site-accent-color) !important;
+        --darkreader-bg--ceSQR-activeMenuItemBackground: var(--site-accent-color) !important;
+        --darkreader-bg--ceSQR-canvasFocusBoxShadow: 0 0 0 2px var(--site-accent-color) !important;
+        --darkreader-border--ic-brand-button--primary-bgd-darkened-15: var(--site-accent-color) !important;
+        --darkreader-border--ic-brand-global-nav-ic-icon-svg-fill--active: var(--site-accent-color) !important;
+        --darkreader-border--ic-link-color: var(--site-accent-color-dark) !important;
+        --darkreader-border--ic-link-color-lightened-10: var(--site-accent-color) !important;
+        --darkreader-border--fbyHH-focusOutlineColor: var(--site-accent-color) !important;
+        --darkreader-border--ceSQR-canvasFocusBorderColor: var(--site-accent-color) !important;
+        --darkreader-border--fOyUs-focusColorInfo: var(--site-accent-color) !important;
+        --darkreader-text--ic-brand-global-nav-ic-icon-svg-fill--active: var(--site-accent-color) !important;
+        --darkreader-text--ic-link-color: var(--site-accent-color) !important;
+        --darkreader-text--ic-link-color-darkened-10: var(--site-accent-color-dark) !important;
+        --darkreader-text--fQfxa-primaryGhostColor: var(--site-accent-color) !important;
+        --eHQDY-color: var(--site-accent-color) !important;
     }
 }
