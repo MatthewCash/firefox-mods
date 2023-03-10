@@ -1,6 +1,9 @@
 (() => {
     const run = window => {
         const { document } = window;
+
+        document.querySelector('#main-window').setAttribute('chromemargin', '0,0,0,0');
+
         let oldTabCount = 0;
 
         const onTabUpdate = () => {
