@@ -37,4 +37,9 @@
         --darkreader-text--fQfxa-primaryGhostColor: var(--site-accent-color) !important;
         --eHQDY-color: var(--site-accent-color) !important;
     }
+
+    /* fix invisible menu item text */
+    *[role="menuitem"].ui-state-focus {
+        color: white !important;
+    }
 }
