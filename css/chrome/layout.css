@@ -161,3 +161,8 @@ hbox#star-button-box {
 #urlbar-zoom-button:not(:hover) {
     background: unset !important;
 }
+
+/* remove left margin from back button */
+#back-button {
+    padding-left: 0 !important;
+}
