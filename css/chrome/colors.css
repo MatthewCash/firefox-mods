@@ -10,4 +10,9 @@
     --in-content-primary-button-background-active: var(--global-accent-color);
     --in-content-primary-button-background-active: var(--global-accent-color);
     --focus-outline-color: var(--global-accent-color) !important;
+
+    /* Firefox Gnome Theme */
+    --gnome-accent-fg: var(--global-accent-color) !important;
+    --gnome-accent-bg: var(--global-accent-color) !important;
+    --gnome-focused-urlbar-border-color: var(--global-accent-color) !important
 }
