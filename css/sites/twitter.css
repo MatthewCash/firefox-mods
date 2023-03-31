@@ -46,4 +46,9 @@
     div[role="progressbar"] > div > svg > circle {
         stroke: var(--site-accent-color) !important;
     }
+
+    /* logo */
+    .r-13gxpu9 {
+        color: var(--site-accent-color) !important;
+    }
 }
