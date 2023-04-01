@@ -51,4 +51,9 @@
     .r-13gxpu9 {
         color: var(--site-accent-color) !important;
     }
+
+    /* see new tweets */
+    .r-yuvema {
+        background-color: var(--site-accent-color-dark) !important;
+    }
 }
