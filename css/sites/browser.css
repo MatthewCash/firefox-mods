@@ -4,4 +4,11 @@
     --in-content-primary-button-background-active: var(--global-accent-color-darker) !important;
     --in-content-background-color: black !important;
     --in-content-page-background: var(--in-content-background-color) !important;
+
+    /* new tab page */
+    --newtab-primary-action-background: var(--global-accent-color) !important;
+    --newtab-textbox-focus-color: var(--global-accent-color) !important;
+    .search-handoff-button {
+        box-shadow: none !important;
+    }
 }
