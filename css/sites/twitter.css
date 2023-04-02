@@ -56,4 +56,9 @@
     .r-yuvema {
         background-color: var(--site-accent-color-dark) !important;
     }
+
+    /* search bar */
+    .r-vhj8yc {
+        border-color: var(--site-accent-color) !important;
+    }
 }
