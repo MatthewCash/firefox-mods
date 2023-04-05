@@ -68,4 +68,9 @@
     button[aria-label="Share"] {
         display: none !important;
     }
+
+    /* hide channel branding overlay */
+    .iv-branding {
+        display: none;
+    }
 }
