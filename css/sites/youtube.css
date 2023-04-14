@@ -28,6 +28,14 @@
         fill: var(--site-accent-color) !important;
     }
 
+    /* disable doodles */
+    .ytd-topbar-logo-renderer[hidden] {
+        display: block !important;
+    }
+    .ytd-yoodle-renderer {
+        display: none;
+    }
+
     /* menu quality indicators */
     .ytp-swatch-color {
         color: var(--site-accent-color) !important;
