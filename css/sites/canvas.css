@@ -42,6 +42,7 @@
         --darkreader-border--yyQPt-focusBorderColor: var(--site-accent-color) !important;
         --darkreader-border--qBMHb-focusOutlineColor: var(--site-accent-color) !important;
         --darkreader-text--ic-brand-global-nav-ic-icon-svg-fill--active: var(--site-accent-color) !important;
+        --darkreader-text--ic-brand-button--primary-text: white !important;
         --darkreader-text--ic-link-color: var(--site-accent-color) !important;
         --darkreader-text--ic-link-color-darkened-10: var(--site-accent-color-dark) !important;
         --darkreader-text--fQfxa-primaryGhostColor: var(--site-accent-color) !important;
@@ -49,6 +50,10 @@
         --darkreader-text--fbyHH-hoverColor: var(--site-accent-color-dark) !important;
         --darkreader-text--enRcg-brandColor: var(--site-accent-color) !important;
         --eHQDY-color: var(--site-accent-color) !important;
+    }
+
+    .btn {
+        color: var(--darkreader-text--ic-brand-button--primary-text) !important;
     }
 
     /* fix invisible menu item text */
