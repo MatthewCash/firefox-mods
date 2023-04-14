@@ -81,4 +81,9 @@
     .iv-branding {
         display: none;
     }
+
+    /* hide featured banners */
+    #big-yoodle {
+        display: none;
+    }
 }
