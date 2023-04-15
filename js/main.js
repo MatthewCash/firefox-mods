@@ -36,18 +36,24 @@
         const { classes, interfaces, manager } = Components;
         const { Services } = Components.utils.import('resource://gre/modules/Services.jsm');
 
-        function ConfigJS() { Services.obs.addObserver(this, 'chrome-document-global-created', false); }
-        ConfigJS.prototype = {
-            observe: function (aSubject) { aSubject.addEventListener('DOMContentLoaded', this, { once: true }); },
-            handleEvent: function (event) {
+        const chromeRegex =
+            /^(chrome:(?!\/\/(global\/content\/commonDialog|browser\/content\/webext-panels)\.x?html)|about:(?!blank))/i;
+
+        class ChromeDocumentObserver {
+            constructor() {
+                Services.obs.addObserver(this, 'chrome-document-global-created', false);
+            }
+            observe(aSubject, topic) {
+                aSubject.addEventListener('DOMContentLoaded', this, { once: true });
+            }
+            handleEvent(event) {
                 const document = event.originalTarget;
                 const window = document.defaultView;
-                const location = window.location;
-                if (/^(chrome:(?!\/\/(global\/content\/commonDialog|browser\/content\/webext-panels)\.x?html)|about:(?!blank))/i.test(location.href)) {
-                    if (window._gBrowser) run(window);
-                }}
+
+                if (chromeRegex.test(window.location.href) && window._gBrowser) run(window);
+            }
         };
 
-        if (!Services.appinfo.inSafeMode) { new ConfigJS(); }
-    } catch (ex) { };
+        if (!Services.appinfo.inSafeMode) new ChromeDocumentObserver();
+    } catch { };
 })();
