@@ -22,8 +22,13 @@
         background-color: var(--site-accent-color-dark) !important;
     }
 
-    /* hide twitter blue */
+    /* hide twitter blue tab */
     a[aria-label="Twitter Blue"] {
+        display: none !important;
+    }
+
+    /* hide verified orgs tab */
+    a[aria-label="Verified Organizations"] {
         display: none !important;
     }
 
