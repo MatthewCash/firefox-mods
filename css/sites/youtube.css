@@ -86,4 +86,21 @@
     #big-yoodle {
         display: none;
     }
+
+    /* make progressbar always visible */
+    .ytp-autohide .ytp-chrome-bottom {
+        opacity: 0.7 !important;
+        visibility: collapse !important;
+        transition: visibility .1s cubic-bezier(.4,0,1,1) !important;
+    }
+    .ytp-autohide .ytp-chrome-bottom > .ytp-progress-bar-container {
+        bottom: 0 !important;
+        transition: bottom .2s cubic-bezier(.4,0,1,1)
+    }
+    .ytp-chapters-container {
+        visibility: visible !important;
+    }
+    .ytp-autohide .ytp-play-progress {
+        transition: transform linear 1s;
+    }
 }
