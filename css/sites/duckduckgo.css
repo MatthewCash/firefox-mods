@@ -1,0 +1,30 @@
+@-moz-document url-prefix("https://duckduckgo.com") {
+    :root {
+        --site-hue: var(--global-hue);
+        --site-saturation: var(--global-saturation);
+        --site-lightness: var(--global-lightness);
+        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
+        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
+        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+    }
+
+    /* hide share feedback button */
+    .js-feedback-btn-wrap {
+        display: none;
+    }
+    
+    /* remove promos */
+    .text_promo,
+    .showcase,
+    .social {
+        display: none !important;
+    }
+
+    /* remove search button */
+    #search_button {
+        display: none !important;
+    }
+    #search_form_input_clear {
+        margin-right: auto !important;;
+    }
+}
