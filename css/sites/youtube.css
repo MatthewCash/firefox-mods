@@ -8,6 +8,11 @@
         --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
     }
 
+    html {
+        --primary-color: var(--site-accent-color) !important;
+        --paper-checkbox-checked-color: var(--site-accent-color) !important;
+    }
+
     /* links */
     :link {
         --yt-endpoint-color: var(--site-accent-color) !important;
