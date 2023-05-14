@@ -166,3 +166,8 @@ hbox#star-button-box {
 #back-button {
     padding-left: 0 !important;
 }
+
+/* remove PiP button in address bar */
+#picture-in-picture-button {
+    display: none;
+}
