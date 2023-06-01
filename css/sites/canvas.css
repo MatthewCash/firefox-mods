@@ -15,6 +15,8 @@
         --darkreader-bg--ic-brand-global-nav-menu-item__text-color--active: var(--site-accent-color) !important;
         --darkreader-bg--ic-brand-global-nav-logo-bgd: var(--site-accent-color) !important;
         --darkreader-bg--ic-link-color: var(--site-accent-color) !important;
+        --darkreader-bg--empSX-activeMenuItemBackground: var(--site-accent-color) !important;
+        --darkreader-bg--empSX-canvasFocusBoxShadow: 0 0 0 2px var(--site-accent-color) !important;
         --darkreader-bg--feqxT-background: var(--site-accent-color) !important;
         --darkreader-bg--feqxT-backgroundHover: var(--site-accent-color-dark) !important;
         --darkreader-bg--XOwIb-defaultSelectedBorderColor: var(--site-accent-color) !important;
