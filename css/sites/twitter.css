@@ -71,4 +71,7 @@
     .r-1peqgm7 {
         background-color: hsla(var(--site-hue), var(--site-saturation), var(--site-lightness), 0.2) !important;
     }
+    .r-r18ze4 {
+        background-color: hsla(var(--site-hue), var(--site-saturation), var(--site-lightness), 0.4) !important;
+    }
 }
