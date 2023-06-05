@@ -39,7 +39,9 @@ mklink /D chrome\firefox-mods ..\wherever\someplace\firefox-mods
 ```css
 @import "/wherever/someplace/firefox-mods/css/chrome/colors.css";
 /* optional if you want the modified layout */
-@import "/wherever/someplace/firefox-mods/css/chrome/layout.css"
+@import "/wherever/someplace/firefox-mods/css/chrome/layout.css";
+/* optional if you want a draggable sidebar */
+@import "/wherever/someplace/firefox-mods/css/chrome/sidebar.css";
 ```
 3. Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` in `about:config`
 
