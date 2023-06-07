@@ -11,7 +11,7 @@ a, :link {
     color: var(--global-accent-color) !important;
 }
 
-::-moz-selection {
+::selection {
     background: var(--global-accent-color-dark) !important;
 }
 
