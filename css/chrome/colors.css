@@ -11,6 +11,7 @@
     --in-content-primary-button-background-active: var(--global-accent-color);
     --focus-outline-color: var(--global-accent-color) !important;
     --panel-banner-item-update-supported-bgcolor: var(--global-accent-color) !important;
+    --lwt-brighttext-url-color: var(--global-accent-color) !important;
 
     /* Firefox Gnome Theme */
     --gnome-accent-fg: var(--global-accent-color) !important;
