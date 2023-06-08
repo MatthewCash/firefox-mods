@@ -19,11 +19,6 @@ a, :link {
     accent-color: var(--global-accent-color-dark) !important;
 }
 
-html {
-    background-color: black;
-}
-
-
 /* Scrollbars */
 * {
     scrollbar-color: transparent transparent !important;
