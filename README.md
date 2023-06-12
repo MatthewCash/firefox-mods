@@ -17,6 +17,8 @@ Firefox customization for chrome and site styles
 
 Installation is not user-friendly, you are expected to be familiar with CSS, JS, and Firefox userChrome!
 
+I regularly use and test this repository on Firefox Dev Edition (Beta) and Thunderbird Stable
+
 1. Create a `chrome` directory in firefox user profile (found in `about:profiles`)
 2. If necessary, [create a symbolic link](#linking) to this repository
 3. Follow instructions to optionally enable [Chrome Styling](#chrome-styling), [Page Styling](#page-styling), and [JavaScript Mods](#javascript-mods)
