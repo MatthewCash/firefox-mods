@@ -8,6 +8,11 @@ Firefox customization for chrome and site styles
 - Site specific changes, mostly changing the site's accent color and removing unused elements
 - Recoloring of Firefox elements in chrome and in the browser's pages
 
+## TODO
+
+- Use TypeScript for JavaScript Mods (are there any types for Firefox?)
+- Preprocess CSS with SCSS to get access to newer features
+
 ## Usage
 
 Installation is not user-friendly, you are expected to be familiar with CSS, JS, and Firefox userChrome!
