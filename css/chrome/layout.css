@@ -58,6 +58,7 @@ hbox#star-button-box {
 
 #navigator-toolbox-background {
     background: linear-gradient(to right, black 260px, transparent 0);
+    appearance: none !important /* remove gtk background color */
 }
 
 #navigator-toolbox {
