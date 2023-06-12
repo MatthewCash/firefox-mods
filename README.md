@@ -52,6 +52,11 @@ mklink /D chrome\firefox-mods ..\wherever\someplace\firefox-mods
 ```
 3. Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true` in `about:config`
 
+4. Set `layout.css.has-selector.enabled` to `true` in `about:config`
+
+> **Note**
+> The :has() pseudo-class, required above, is not ready for release and has some bugs! https://bugzilla.mozilla.org/show_bug.cgi?id=418039
+
 ## Page Styling
 
 1. Create a file in your chrome directory named `userContent.css`
