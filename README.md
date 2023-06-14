@@ -67,9 +67,10 @@ mklink /D chrome\firefox-mods ..\wherever\someplace\firefox-mods
 
 ## JavaScript Mods
 
-1. Create a file in your chrome directory named `chrome.manifest` with only the text `content mods ./`
-2. Create a file in your chrome directory named 'entrypoint.js'
-3. Import this repository's `main.js` file
+1. Copy `install_dir/config.js` to your Firefox installation directory (*NOT* the chrome directory, the actual system install directory)
+2. Copy `install_dir/config-prefs.js` to the `defaults/pref` directory in your Firefox installation directory
+3. Create a file in your chrome directory named `chrome.manifest` with only the text `content mods ./`
+4. Create a file in your chrome directory named `entrypoint.js` and import this repository's `main.js` file
 ```js
 Components.utils.import('chrome://mods/content/firefox-mods/js/main.js');
 ```
