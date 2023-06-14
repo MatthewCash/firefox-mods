@@ -79,4 +79,9 @@
     aside[aria-label="Get Verified"] {
         display: none !important;
     }
+
+    /* poll buttons */
+    [style="border-color: rgb(29, 155, 240);"] {
+        border-color: var(--site-accent-color) !important;
+    }
 }
