@@ -12,4 +12,7 @@ try {
         manager.QueryInterface(interfaces.nsIComponentRegistrar).autoRegister(manifest);
         utils.import('chrome://mods/content/entrypoint.js');
     }
-} catch { }
+} catch (error) {
+    console.warn('Failed to load JS mods!');
+    console.error(error);
+}
