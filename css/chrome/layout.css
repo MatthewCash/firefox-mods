@@ -21,11 +21,6 @@ toolbarbutton#nav-bar-overflow-button:hover > image {
     color: white;
 }
 
-/* Hide Application Menu Button */
-toolbarbutton#PanelUI-menu-button {
-    display: none;
-}
-
 /* Hide Star in Omnibox */
 hbox#star-button-box {
     display: none;
@@ -87,18 +82,43 @@ hbox#star-button-box {
     max-width: 280px;
 }
 
-/* Hide shield */
-#tracking-protection-icon-container {
-    display: none;
+/* make shield grayscale */
+#tracking-protection-icon {
+    filter: grayscale(1);
 }
 
-/* Smaller identity/permission boxes */
-#identity-box > box {
+/* smaller shield/identity/permission boxes */
+#tracking-protection-icon-container, #identity-box > box {
     padding: 0 2px !important;
 }
-#identity-box > box > image {
+:is(#tracking-protection-icon-container, #identity-box) > box > image {
     width: 13.6px !important;
     margin: 0 auto !important;
+}
+
+/* hide site icons */
+#tracking-protection-icon-container,
+#identity-icon-box,
+#identity-permission-box {
+    visibility: collapse;
+}
+
+/* show icons on hover */
+#nav-bar:hover :is(
+    #tracking-protection-icon-container,
+    #identity-icon-box,
+    #identity-permission-box
+) {
+    visibility: visible;
+}
+
+/* show icons when menu open */
+#nav-bar:has(box[open="true"]) :is(
+    #tracking-protection-icon-container,
+    #identity-icon-box,
+    #identity-permission-box
+) {
+    visibility: visible;
 }
 
 /* Remove identity box background */
@@ -140,22 +160,29 @@ hbox#star-button-box {
     margin-left: 0 !important;
 }
 
-/* Prevent browser popups from glitching */
+/* collapsed by default */
+#unified-extensions-button,
+#nav-bar-overflow-button,
 #PanelUI-menu-button {
-    display: block !important;
-    padding-right: 0 !important;
+    visibility: collapse;
 }
-#PanelUI-menu-button > stack > image, #unified-extensions-button > image {
-    visibility: hidden;
-}
-#PanelUI-menu-button:hover > stack > image, #unified-extensions-button:hover > image  {
+
+/* visible when address bar is hovered */
+#nav-bar:hover :is(
+    #unified-extensions-button,
+    #nav-bar-overflow-button,
+    #PanelUI-menu-button
+) {
     visibility: visible;
 }
-#PanelUI-menu-button[open="true"] > stack > image, #unified-extensions-button[open="true"] > image  {
+
+/* visible when a menu is open */
+#nav-bar:has(toolbarbutton[open="true"]) :is(
+    #unified-extensions-button,
+    #nav-bar-overflow-button,
+    #PanelUI-menu-button
+) {
     visibility: visible;
-}
-#PanelUI-menu-button label.toolbarbutton-badge {
-    display: none !important;
 }
 
 /* remove background from zoom indicator */
