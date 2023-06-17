@@ -27,8 +27,8 @@
         display: none !important;
     }
 
-    /* hide verified orgs tab */
-    a[aria-label="Verified Organizations"] {
+    /* hide verified tab */
+    a[aria-label="Verified"] {
         display: none !important;
     }
 
