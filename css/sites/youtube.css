@@ -29,7 +29,7 @@
     }
 
     /* change logo color */
-    yt-icon > svg > g:nth-child(1) > g:nth-child(1) > path:nth-child(1) {
+    .ytd-logo svg:nth-child(1) > g:nth-child(1) > path:nth-child(1) {
         fill: var(--site-accent-color) !important;
     }
 
