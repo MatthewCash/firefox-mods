@@ -1,0 +1,60 @@
+@-moz-document regexp("^https:\/\/rumble.com.*$") {
+    :root {
+        --site-hue: var(--global-hue);
+        --site-saturation: var(--global-saturation);
+        --site-lightness: var(--global-lightness);
+        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
+        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
+        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+    }
+
+    /* change logo color */
+    .header-logo > img, .foot__logo {
+        filter: hue-rotate(185deg);
+    }
+
+    /* hide upload button */
+    .header-upload {
+        display: none !important;
+    }
+
+    /* hide join button */
+    button[data-context="video"] {
+        display: none !important;
+    }
+    
+    /* progress bar */
+    .videoPlayer-Rumble-cls > div > div > div > div > div {
+        background-color: var(--site-accent-color) !important;
+    }
+
+    /* play/pause icons */
+    .videoPlayer-Rumble-cls > div > div:nth-child(n+4):nth-child(-n+5) > div {
+        background-color: var(--site-accent-color) !important;
+    }
+
+    /* remove borders */
+    #theaterVideoPlayer {
+        border-width: 0 !important;
+    }
+
+    .verification-badge-icon > path {
+        fill: var(--site-accent-color) !important;
+    }
+    .media-subscribe {
+        border-color: var(--site-accent-color) !important;
+    }
+    .bg-green, .rating-bar__fill {
+        background-color: var(--site-accent-color) !important;
+        border-color: transparent !important;
+    }
+    .bg-green:hover {
+        background-color: var(--site-accent-color-dark) !important;
+    }
+    .bg-green:active {
+        background-color: var(--site-accent-color-darker) !important;
+    }
+    .comment-toggle-replies {
+        color: var(--site-accent-color) !important;
+    }
+}
