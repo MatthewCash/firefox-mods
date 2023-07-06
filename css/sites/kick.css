@@ -1,0 +1,66 @@
+@-moz-document regexp("^https:\/\/kick.com.*$") {
+    :root {
+        --site-hue: var(--global-hue);
+        --site-saturation: var(--global-saturation);
+        --site-lightness: var(--global-lightness);
+        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
+        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
+        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+    }
+
+    #main-view,
+    .sidebar, /* channel list */
+    .sidebar-item:not(:hover, :active), /* channel list items */
+    .chatroom-footer, /* chat input */
+    input {
+        background-color: black !important;
+    }
+
+    .bg-secondary, .bg-secondary-lighter {
+        background-color: black !important;
+    }
+
+    /* remove border from channel list */
+    .w-full {
+        border-width: 0 !important;
+    }
+
+    /* hide volume scrubber head */
+    .vjs-volume-level::before {
+        content: "" !important;
+    }
+
+    /* accent color */
+    .text-primary,
+    .live-tag-component,
+    .vjs-control:hover,
+    .vjs-live-display,
+    .lg\:hover\:text-primary:hover {
+        color: var(--site-accent-color) !important;
+    }
+    .avatar-live-tag,
+    .item-status-indicator,
+    .vjs-volume-level {
+        background-color: var(--site-accent-color) !important;
+    }
+    .avatar-holder-live .owner-avatar::after {
+        box-shadow: var(--site-accent-color) 0 0 0 2px !important;
+    }
+    .\!border-primary\/100 {
+        border-color: var(--site-accent-color) !important;
+    }
+    .variant-action {
+        background-color: var(--site-accent-color) !important;
+    }
+    .variant-action:hover,
+    .vjs-menu li:hover {
+        background-color: var(--site-accent-color-dark) !important;
+    }
+    .variant-action:active,
+    .vjs-menu li.vjs-selected {
+        background-color: var(--site-accent-color-darker) !important;
+    }
+    .variant-action:disabled {
+        background-color: hsl(var(--site-hue), calc(var(--site-saturation) - 30%), calc(var(--site-lightness) - 40%)) !important;
+    }
+}
