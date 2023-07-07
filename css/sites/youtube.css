@@ -108,4 +108,9 @@
     .ytp-autohide .ytp-play-progress {
         transition: transform linear 1s;
     }
+
+    /* hide View Products overlay */
+    button[aria-label="View products"] {
+        display: none !important;
+    }
 }
