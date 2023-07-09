@@ -12,3 +12,36 @@
     --toggle-background-color-pressed: var(--global-accent-color) !important;
     --toggle-background-color-pressed-hover: var(--global-accent-color-dark) !important;
 }
+
+.checkbox-check[checked], input[type="checkbox"]:checked {
+    background-color: var(--global-accent-color) !important;
+    border-color: var(--global-accent-color) !important;
+}
+
+a, :link {
+    color: var(--global-accent-color) !important;
+}
+
+::selection {
+    background: var(--global-accent-color) !important;
+}
+
+* {
+    accent-color: var(--global-accent-color) !important;
+}
+
+/* Scrollbars */
+* {
+    scrollbar-color: transparent transparent !important;
+}
+*:hover {
+    scrollbar-color: var(--global-accent-color) transparent !important;
+}
+
+/* Thunderbird dropdowns */
+menuitem:not([disabled="true"])[selected="true"] {
+    background-color: var(--global-accent-color-dark) !important;
+}
+menuitem:not([disabled="true"])[_moz-menuactive="true"] {
+    background-color: var(--global-accent-color) !important;
+}

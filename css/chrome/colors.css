@@ -11,5 +11,11 @@
     /* Firefox Gnome Theme */
     --gnome-accent-fg: var(--global-accent-color) !important;
     --gnome-accent-bg: var(--global-accent-color) !important;
-    --gnome-focused-urlbar-border-color: var(--global-accent-color) !important
+    --gnome-focused-urlbar-border-color: var(--global-accent-color) !important;
+}
+
+/* Autocomplete dropdowns */
+.autocomplete-richlistitem[selected],
+treechildren.searchbar-treebody::-moz-tree-row(selected) {
+    background-color: var(--global-accent-color) !important;
 }
