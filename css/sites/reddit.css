@@ -1,0 +1,40 @@
+@-moz-document regexp("^https:\/\/www.reddit.com.*$") {
+    :root {
+        --site-hue: var(--global-hue);
+        --site-saturation: var(--global-saturation);
+        --site-lightness: var(--global-lightness);
+        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
+        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
+        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+    }
+
+    /* kide popular and coin button */
+    .x0hiXHicn7r3BG9m1FJH4 {
+        display: none !important;
+    }
+
+    /* hide advertise button */
+    a[aria-label="Advertise"] {
+        display: none !important;
+    }
+
+    /* hide reddit premium ad and create community panel */
+    ._2vEf-C2keJaBMY9qk_BxVn:nth-child(-n + 2) {
+        display: none !important;
+    }
+
+    /* logo color */
+    a[aria-label="Home"] > svg:nth-child(1) circle {
+        fill: var(--site-accent-color) !important;
+    }
+
+    /* karma icon color */
+    .icon-karma_fill {
+        color: var(--site-accent-color) !important;
+    }
+
+    /* button color */
+    ._10BQ7pjWbeYP63SAPNS8Ts {
+        background-color: var(--site-accent-color) !important;        
+    }
+}
