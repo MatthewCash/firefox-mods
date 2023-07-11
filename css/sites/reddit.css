@@ -24,7 +24,7 @@
     }
 
     /* logo color */
-    a[aria-label="Home"] > svg:nth-child(1) circle {
+    a[aria-label="Home"] svg:nth-child(1) circle {
         fill: var(--site-accent-color) !important;
     }
 
