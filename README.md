@@ -72,5 +72,6 @@ mklink /D chrome\firefox-mods ..\wherever\someplace\firefox-mods
 3. Create a file in your chrome directory named `chrome.manifest` with only the text `content mods ./`
 4. Create a file in your chrome directory named `entrypoint.js` and import this repository's `main.js` file
 ```js
+const EXPORTED_SYMBOLS = [];
 Components.utils.import('chrome://mods/content/firefox-mods/js/main.js');
 ```

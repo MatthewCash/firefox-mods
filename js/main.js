@@ -1,3 +1,5 @@
+const EXPORTED_SYMBOLS = [];
+
 (() => {
     const run = window => {
         const { document } = window;
