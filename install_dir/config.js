@@ -13,6 +13,5 @@ try {
         utils.import('chrome://mods/content/entrypoint.js');
     }
 } catch (error) {
-    console.warn('Failed to load JS mods!');
-    console.error(error);
+    Services.prompt.alert(null, 'Failed to load JS module!', error);
 }
