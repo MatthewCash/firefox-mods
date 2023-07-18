@@ -9,8 +9,8 @@
     }
 
     /* change logo color */
-    .header-logo > img, .foot__logo {
-        filter: hue-rotate(185deg);
+    [fill="#85C742"] {
+        fill: var(--site-accent-color) !important;
     }
 
     /* hide upload button */
