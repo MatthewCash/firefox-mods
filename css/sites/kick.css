@@ -11,6 +11,7 @@
     #main-view,
     .sidebar, /* channel list */
     .sidebar-item:not(:hover, :active), /* channel list items */
+    chat-content, /* chat header and messages */
     .chatroom-footer, /* chat input */
     input {
         background-color: black !important;
