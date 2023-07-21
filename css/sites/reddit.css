@@ -6,6 +6,9 @@
         --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
         --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
         --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+
+        --newCommunityTheme-button: var(--site-accent-color) !important;
+        --newCommunityTheme-body: black !important;
     }
 
     /* kide popular and coin button */
