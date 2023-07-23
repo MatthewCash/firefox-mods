@@ -11,6 +11,11 @@
         --newCommunityTheme-body: black !important;
     }
 
+    /* main background */
+    .ListingLayout-backgroundContainer {
+        --pseudo-before-background: black !important;
+    }
+
     /* kide popular and coin button */
     .x0hiXHicn7r3BG9m1FJH4 {
         display: none !important;
