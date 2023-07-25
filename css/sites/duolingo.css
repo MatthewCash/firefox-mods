@@ -9,9 +9,11 @@
     }
 
     * {
-        --web-ui_button-background-color: var(--site-accent-color-dark) !important;
-        --web-ui_button-border-color: var(--site-accent-color-dark) !important;
-        --web-ui_button-color: var(--site-accent-color-dark) !important;
+        --web-ui_button-color: white !important;
+    }
+
+    :link {
+        color: initial !important;
     }
 
     .-oI84 {
