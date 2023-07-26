@@ -10,6 +10,8 @@
 
     * {
         --web-ui_button-color: white !important;
+        --color-snow: 0, 0, 0 !important;
+        --color-walking-fish: 10, 0, 0 !important;
     }
 
     :link {
