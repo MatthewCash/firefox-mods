@@ -51,4 +51,9 @@
         background-color: var(--site-accent-color) !important;
         color: white !important;
     }
+
+    /* unread indicator */
+    ._1-nIsCaWhGBFN-L4ZHnbGp {
+        background-color: var(--site-accent-color) !important;
+    }
 }
