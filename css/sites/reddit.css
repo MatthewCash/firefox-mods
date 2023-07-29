@@ -48,6 +48,7 @@
 
     /* button color */
     ._10BQ7pjWbeYP63SAPNS8Ts {
-        background-color: var(--site-accent-color) !important;        
+        background-color: var(--site-accent-color) !important;
+        color: white !important;
     }
 }
