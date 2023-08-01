@@ -64,4 +64,9 @@
     .variant-action:disabled {
         background-color: hsl(var(--site-hue), calc(var(--site-saturation) - 30%), calc(var(--site-lightness) - 40%)) !important;
     }
+
+    /* online channel indicator */
+    .border-primary {
+        border-color: var(--site-accent-color) !important;
+    }
 }
