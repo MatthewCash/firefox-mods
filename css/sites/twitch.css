@@ -17,11 +17,13 @@
         --color-background-button-primary-default: var(--site-accent-color) !important;
         --color-background-button-primary-hover: var(--site-accent-color-dark) !important;
         --color-background-button-primary-active: var(--site-accent-color-darker) !important;
+
+        --border-width-default: 0 !important;
     }
 
-    /* remove border between player and channel name */
-    .iofXOu {
-        border: none !important;
+    /* chat background */
+    .chat-room {
+        background-color: black !important;
     }
 
     /* remove unnecssary buttons/icons */
