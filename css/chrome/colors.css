@@ -1,13 +1,6 @@
 @import "../colors.css";
 
 :root {
-    --global-hue: var(--system-hue);
-    --global-saturation: var(--system-saturation);
-    --global-lightness: var(--system-lightness);
-    --global-accent-color: hsl(var(--global-hue), var(--global-saturation), var(--global-lightness));
-    --global-accent-color-dark: hsl(var(--global-hue), var(--global-saturation), calc(var(--global-lightness) - 5%));
-    --global-accent-color-darker: hsl(var(--global-hue), var(--global-saturation), calc(var(--global-lightness) - 10%));
-
     /* Firefox Gnome Theme */
     --gnome-accent-fg: var(--global-accent-color) !important;
     --gnome-accent-bg: var(--global-accent-color) !important;
