@@ -36,7 +36,6 @@ const EXPORTED_SYMBOLS = [];
 
     try {
         const { classes, interfaces, manager } = Components;
-        const { Services } = Components.utils.import('resource://gre/modules/Services.jsm');
 
         const chromeRegex =
             /^(chrome:(?!\/\/(global\/content\/commonDialog|browser\/content\/webext-panels)\.x?html)|about:(?!blank))/i;
