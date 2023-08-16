@@ -56,5 +56,7 @@ const EXPORTED_SYMBOLS = [];
         };
 
         if (!Services.appinfo.inSafeMode) new ChromeDocumentObserver();
-    } catch { };
+    } catch(error) {
+        Services.prompt.alert(null, "Failed to setup JS mods!", error);
+    };
 })();
