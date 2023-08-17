@@ -1,0 +1,26 @@
+:root {
+    --tree-view-bg: black !important;
+    
+    --treeitem-background-selected: var(--global-accent-color) !important;
+    --listbox-selected-bg: var(--global-accent-color) !important;
+    --listbox-focused-selected-bg: var(--global-accent-color) !important;
+    --treeitem-background-active: var(--global-accent-color) !important;
+
+    --selected-item-color: var(--global-accent-color) !important;
+
+    --toolbarbutton-icon-fill-attention: var(--global-accent-color) !important;
+}
+
+#messagePane,
+#messagepanebox {
+    background-color: black !important;
+}
+
+/* message info */
+.text-link {
+    color: var(--global-accent-color) !important;
+}
+
+tr[is="thread-row"] {
+    color: white !important;
+}
