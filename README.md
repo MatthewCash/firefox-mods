@@ -34,8 +34,13 @@ Create a link in your profile's chrome directory pointing to this repository
 ln -s chrome/firefox-mods ./wherever/someplace/firefox-mods
 ```
 
+```powershell
+# Windows Powershell
+New-Item -ItemType SymbolicLink -Path .\chrome\firefox-mods -Target ..\wherever\someplace\firefox-mods
+```
+
 ```batch
-:: Windows
+:: Windows cmd
 mklink /D chrome\firefox-mods ..\wherever\someplace\firefox-mods
 ```
 
