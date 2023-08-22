@@ -75,8 +75,9 @@
         background-color: hsla(var(--site-hue), var(--site-saturation), var(--site-lightness), 0.4) !important;
     }
 
-    /* hide Get Verified ad */
-    aside[aria-label="Get Verified"] {
+    /* hide ads */
+    aside[aria-label="Get Verified"],
+    aside[aria-label="Subscribe to Premium"] {
         display: none !important;
     }
 
