@@ -63,4 +63,9 @@
     *[role="menuitem"].ui-state-focus {
         color: white !important;
     }
+
+    /* text input borders */
+    .tox .tox-edit-area.active, .tox .tox-edit-area.active iframe {
+        border-color: var(--site-accent-color) !important;
+    }
 }
