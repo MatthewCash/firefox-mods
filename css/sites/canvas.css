@@ -68,4 +68,9 @@
     .tox .tox-edit-area.active, .tox .tox-edit-area.active iframe {
         border-color: var(--site-accent-color) !important;
     }
+
+    /* new activity badge */
+    .StickyButton-styles__root {
+        background-color: var(--site-accent-color-dark) !important;
+    }
 }
