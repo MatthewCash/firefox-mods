@@ -94,6 +94,11 @@ hbox#star-button-box {
 :is(#tracking-protection-icon-container, #identity-box) > box > image {
     width: 13.6px !important;
     margin: 0 auto !important;
+    padding: 0 !important
+}
+
+#notification-popup-box {
+    height: revert !important;
 }
 
 /* hide site icons */
