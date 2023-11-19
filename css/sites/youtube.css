@@ -20,6 +20,7 @@
 
     #progress, /* thumbnail watch progress */
     .ytp-scrubber-button, /* video scrubber */
+    .progress-bar-played.ytd-progress-bar-line, /* shorts scrubber */
     .ytp-swatch-background-color,
     .ytp-chrome-controls .ytp-button[aria-pressed]::after /* caption indicator */,
     .ytp-settings-button::after, /* quality indicator */
