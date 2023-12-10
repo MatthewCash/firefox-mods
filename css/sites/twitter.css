@@ -8,12 +8,12 @@
         --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
     }
 
-    .r-1cvl2hr, *[style="color: rgb(29, 155, 240);"] {
+    .r-1cvl2hr, *[style*="color: rgb(29, 155, 240);"] {
         color: var(--site-accent-color) !important;
     }
 
-    .r-l5o3uw, *[style="background-color: rgb(0, 111, 214);"],
-    *[style="background-color: rgb(29, 155, 240); border-color: rgba(0, 0, 0, 0);"] {
+    .r-l5o3uw, *[style*="background-color: rgb(0, 111, 214);"],
+    *[style*="background-color: rgb(29, 155, 240);"] {
         background-color: var(--site-accent-color) !important;
         border-color: var(--site-accent-color) !important;
     }
@@ -33,7 +33,7 @@
     }
 
     /* likes */
-    div[style="color: rgb(249, 24, 128);"] {
+    div[style*="color: rgb(249, 24, 128);"] {
         color: var(--site-accent-color) !important;
     }
 
