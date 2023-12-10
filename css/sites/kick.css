@@ -36,7 +36,8 @@
     .live-tag-component,
     .vjs-control:hover,
     .vjs-live-display,
-    .lg\:hover\:text-primary:hover {
+    .lg\:hover\:text-primary:hover,
+    .link {
         color: var(--site-accent-color) !important;
     }
     .avatar-live-tag,
