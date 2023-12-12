@@ -6,54 +6,23 @@
         --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
         --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
         --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
-
-        --newCommunityTheme-button: var(--site-accent-color) !important;
-        --newCommunityTheme-body: black !important;
     }
 
-    /* main background */
-    .ListingLayout-backgroundContainer {
-        --pseudo-before-background: black !important;
-    }
-
-    /* change card width */
-    ._1OVBBWLtHoSPfGCRaPzpTf._3nSp9cdBpqL13CqjdMr2L_ {
-        width: 800px !important;
-    }
-
-    /* kide popular and coin button */
-    .x0hiXHicn7r3BG9m1FJH4 {
-        display: none !important;
-    }
-
-    /* hide advertise button */
-    a[aria-label="Advertise"] {
-        display: none !important;
-    }
-
-    /* hide reddit premium ad and create community panel */
-    ._2vEf-C2keJaBMY9qk_BxVn:nth-child(-n + 2) {
-        display: none !important;
+    /* main background color */
+    body, .bg-neutral-background {
+        background-color: black !important;
     }
 
     /* logo color */
-    a[aria-label="Home"] circle {
+    path.snoo-cls-10 {
         fill: var(--site-accent-color) !important;
     }
-
-    /* karma icon color */
-    .icon-karma_fill {
-        color: var(--site-accent-color) !important;
+    path:is(.snoo-cls-4, .snoo-cls-7) {
+        fill: var(--site-accent-color-darker) !important;
     }
 
-    /* button color */
-    ._10BQ7pjWbeYP63SAPNS8Ts {
-        background-color: var(--site-accent-color) !important;
-        color: white !important;
-    }
-
-    /* unread indicator */
-    ._1-nIsCaWhGBFN-L4ZHnbGp {
-        background-color: var(--site-accent-color) !important;
+    /* remove advertise button */
+    #advertise-button {
+        display: none !important;
     }
 }
