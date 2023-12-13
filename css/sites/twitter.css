@@ -27,9 +27,13 @@
         display: none !important;
     }
 
+    a[href="/i/grok"] {
+        display: none !important;
+    }
+
     /* verified badge */
     svg[aria-label="Verified account"] * {
-        fill:  var(--site-accent-color) !important;
+        fill: var(--site-accent-color) !important;
     }
 
     /* likes */
