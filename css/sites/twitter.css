@@ -81,7 +81,7 @@
     }
 
     /* poll buttons */
-    [style="border-color: rgb(29, 155, 240);"] {
+    [style*="border-color: rgb(29, 155, 240);"] {
         border-color: var(--site-accent-color) !important;
     }
 }
