@@ -31,4 +31,9 @@
     ._1OVBBWLtHoSPfGCRaPzpTf._3nSp9cdBpqL13CqjdMr2L_ {
         width: 800px !important;
     }
+
+    /* remove premium, links/copyright box */
+    ._3RPJ8hHnfFohktLZca18J6, ._1oRQu-aolgpPPJDblUGTw5 {
+        display: none !important;
+    }
 }
