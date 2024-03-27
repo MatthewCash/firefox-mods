@@ -23,7 +23,7 @@
     }
 
     /* remove advertise button */
-    #advertise-button {
+    [aria-label="Advertise"] {
         display: none !important;
     }
 
