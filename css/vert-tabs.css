@@ -14,6 +14,7 @@
 
     #tabbar {
         justify-content: space-between;
+        margin-top: -2px !important;;
     }
 
     .newtab-action-selector-anchor {
@@ -28,7 +29,7 @@
 
     tab-item {
         border-radius: 0.5em;
-        height: 37.9px;
+        height: 38px !important;
     }
 
     tab-item-substance {
