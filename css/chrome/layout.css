@@ -36,6 +36,10 @@ hbox#star-button-box {
     height: auto !important;
 }
 
+#nav-bar {
+    border-width: 0;
+}
+
 /* Remove white line between Vertical tabs and browser content */
 #sidebar-splitter {
     display: none;
