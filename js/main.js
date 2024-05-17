@@ -6,8 +6,6 @@ const EXPORTED_SYMBOLS = [];
 
         document.querySelector('#main-window').setAttribute('chromemargin', '0,0,0,0');
 
-        let oldTabCount = 0;
-
         const onTabUpdate = () => {
             const inNewTab = ['about:newtab', 'about:blank'].includes(window.gBrowser.currentURI.spec);
 
@@ -18,8 +16,6 @@ const EXPORTED_SYMBOLS = [];
             const tabCount = window.gBrowser.tabs.length;
             const sidebarHeight = (tabCount + 1) * 38;
             if (sidebarHeight > 1) document.querySelector('#sidebar').style.maxHeight = `${sidebarHeight}px`;
-
-            oldTabCount = tabCount;
         };
 
         new window.MutationObserver(onTabUpdate).observe(
@@ -35,8 +31,6 @@ const EXPORTED_SYMBOLS = [];
     };
 
     try {
-        const { classes, interfaces, manager } = Components;
-
         const chromeRegex =
             /^(chrome:(?!\/\/(global\/content\/commonDialog|browser\/content\/webext-panels)\.x?html)|about:(?!blank))/i;
 
