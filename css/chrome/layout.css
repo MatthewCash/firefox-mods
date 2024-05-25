@@ -37,7 +37,7 @@ hbox#star-button-box {
 }
 
 #nav-bar {
-    border-width: 0;
+    border-width: 0 !important;
 }
 
 /* Remove white line between Vertical tabs and browser content */
