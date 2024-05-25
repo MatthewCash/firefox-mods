@@ -1,19 +1,33 @@
-@-moz-document regexp("^https:\/\/(tweetdeck\.)?twitter\.com.*$") {
+@-moz-document regexp("^https:\/\/(tweetdeck\.)?(x|twitter)\.com.*$") {
     :root {
         --site-hue: var(--global-hue);
         --site-saturation: var(--global-saturation);
         --site-lightness: var(--global-lightness);
-        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
-        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
-        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+        --site-accent-color: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            var(--site-lightness)
+        );
+        --site-accent-color-dark: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 5%)
+        );
+        --site-accent-color-darker: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 10%)
+        );
     }
 
-    .r-1cvl2hr, *[style*="color: rgb(29, 155, 240);"] {
+    .r-1cvl2hr,
+    *[style*='color: rgb(29, 155, 240);'] {
         color: var(--site-accent-color) !important;
     }
 
-    .r-l5o3uw, *[style*="background-color: rgb(0, 111, 214);"],
-    *[style*="background-color: rgb(29, 155, 240);"] {
+    .r-l5o3uw,
+    *[style*='background-color: rgb(0, 111, 214);'],
+    *[style*='background-color: rgb(29, 155, 240);'] {
         background-color: var(--site-accent-color) !important;
         border-color: var(--site-accent-color) !important;
     }
@@ -23,21 +37,21 @@
     }
 
     /* hide premium tab */
-    a[aria-label="Premium"] {
+    a[aria-label='Premium'] {
         display: none !important;
     }
 
-    a[href="/i/grok"] {
+    a[href='/i/grok'] {
         display: none !important;
     }
 
     /* verified badge */
-    svg[aria-label="Verified account"] * {
+    svg[aria-label='Verified account'] * {
         fill: var(--site-accent-color) !important;
     }
 
     /* likes */
-    div[style*="color: rgb(249, 24, 128);"] {
+    div[style*='color: rgb(249, 24, 128);'] {
         color: var(--site-accent-color) !important;
     }
 
@@ -47,7 +61,7 @@
     }
 
     /* progress spinner */
-    div[role="progressbar"] > div > svg > circle {
+    div[role='progressbar'] > div > svg > circle {
         stroke: var(--site-accent-color) !important;
     }
 
@@ -68,20 +82,30 @@
 
     /* change meatball menu hover background color */
     .r-1peqgm7 {
-        background-color: hsla(var(--site-hue), var(--site-saturation), var(--site-lightness), 0.2) !important;
+        background-color: hsla(
+            var(--site-hue),
+            var(--site-saturation),
+            var(--site-lightness),
+            0.2
+        ) !important;
     }
     .r-r18ze4 {
-        background-color: hsla(var(--site-hue), var(--site-saturation), var(--site-lightness), 0.4) !important;
+        background-color: hsla(
+            var(--site-hue),
+            var(--site-saturation),
+            var(--site-lightness),
+            0.4
+        ) !important;
     }
 
     /* hide ads */
-    aside[aria-label="Get Verified"],
-    aside[aria-label="Subscribe to Premium"] {
+    aside[aria-label='Get Verified'],
+    aside[aria-label='Subscribe to Premium'] {
         display: none !important;
     }
 
     /* poll buttons */
-    [style*="border-color: rgb(29, 155, 240);"] {
+    [style*='border-color: rgb(29, 155, 240);'] {
         border-color: var(--site-accent-color) !important;
     }
 }

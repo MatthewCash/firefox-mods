@@ -9,7 +9,9 @@ try {
     manifest.append('chrome.manifest');
 
     if (manifest.exists()) {
-        manager.QueryInterface(interfaces.nsIComponentRegistrar).autoRegister(manifest);
+        manager
+            .QueryInterface(interfaces.nsIComponentRegistrar)
+            .autoRegister(manifest);
         utils.import('chrome://mods/content/entrypoint.js');
     }
 } catch (error) {

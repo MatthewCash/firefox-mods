@@ -3,9 +3,21 @@
         --site-hue: var(--global-hue);
         --site-saturation: var(--global-saturation);
         --site-lightness: var(--global-lightness);
-        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
-        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
-        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+        --site-accent-color: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            var(--site-lightness)
+        );
+        --site-accent-color-dark: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 5%)
+        );
+        --site-accent-color-darker: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 10%)
+        );
     }
 
     * {
@@ -22,7 +34,9 @@
         color: var(--site-accent-color) !important;
     }
 
-    ._1D8II, .jTP0E, ._3e9O1 {
+    ._1D8II,
+    .jTP0E,
+    ._3e9O1 {
         color: white !important;
     }
 

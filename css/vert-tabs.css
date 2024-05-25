@@ -3,9 +3,21 @@
         --hue: var(--system-hue);
         --saturation: var(--system-saturation);
         --lightness: var(--system-lightness);
-        --tabs-accent-color: hsl(var(--hue), var(--saturation), var(--lightness));
-        --tabs-accent-color-dark: hsl(var(--hue), var(--saturation), calc(var(--lightness) - 5%));
-        --tabs-accent-color-darker: hsl(var(--hue), var(--saturation), calc(var(--lightness) - 10%));
+        --tabs-accent-color: hsl(
+            var(--hue),
+            var(--saturation),
+            var(--lightness)
+        );
+        --tabs-accent-color-dark: hsl(
+            var(--hue),
+            var(--saturation),
+            calc(var(--lightness) - 5%)
+        );
+        --tabs-accent-color-darker: hsl(
+            var(--hue),
+            var(--saturation),
+            calc(var(--lightness) - 10%)
+        );
     }
 
     div#tabbar-container {
@@ -14,7 +26,7 @@
 
     #tabbar {
         justify-content: space-between;
-        margin-top: -2px !important;;
+        margin-top: -2px !important;
     }
 
     .newtab-action-selector-anchor {
@@ -74,14 +86,14 @@
     tab-sound-button {
         margin-right: 4px !important;
     }
-    
+
     .newtab-button-box {
         display: none !important;
     }
 
     /* change font to Aurebesh */
     span {
-        font-family: "Aurebesh", sans-serif !important;
+        font-family: 'Aurebesh', sans-serif !important;
     }
 
     /* align tab title with icon */

@@ -1,13 +1,13 @@
-@import "./css/vert-tabs.css";
+@import './css/vert-tabs.css';
 
-@import "./css/sites/browser.css";
+@import './css/sites/browser.css';
 
-@import "./css/sites/canvas.css";
-@import "./css/sites/duolingo.css";
-@import "./css/sites/twitter.css";
-@import "./css/sites/youtube.css";
-@import "./css/sites/duckduckgo.css";
-@import "./css/sites/reddit.css";
-@import "./css/sites/twitch.css";
-@import "./css/sites/kick.css";
-@import "./css/sites/rumble.css";
+@import './css/sites/canvas.css';
+@import './css/sites/duolingo.css';
+@import './css/sites/twitter.css';
+@import './css/sites/youtube.css';
+@import './css/sites/duckduckgo.css';
+@import './css/sites/reddit.css';
+@import './css/sites/twitch.css';
+@import './css/sites/kick.css';
+@import './css/sites/rumble.css';

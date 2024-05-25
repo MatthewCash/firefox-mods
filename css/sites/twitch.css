@@ -3,9 +3,21 @@
         --site-hue: var(--global-hue);
         --site-saturation: var(--global-saturation);
         --site-lightness: var(--global-lightness);
-        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
-        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
-        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+        --site-accent-color: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            var(--site-lightness)
+        );
+        --site-accent-color-dark: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 5%)
+        );
+        --site-accent-color-darker: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 10%)
+        );
     }
 
     .tw-root--theme-dark {
@@ -14,9 +26,15 @@
         --color-background-body: black !important;
         --color-background-float: rgba(0, 0, 0, 0.9) !important;
 
-        --color-background-button-primary-default: var(--site-accent-color) !important;
-        --color-background-button-primary-hover: var(--site-accent-color-dark) !important;
-        --color-background-button-primary-active: var(--site-accent-color-darker) !important;
+        --color-background-button-primary-default: var(
+            --site-accent-color
+        ) !important;
+        --color-background-button-primary-hover: var(
+            --site-accent-color-dark
+        ) !important;
+        --color-background-button-primary-active: var(
+            --site-accent-color-darker
+        ) !important;
 
         --border-width-default: 0 !important;
     }
@@ -28,7 +46,7 @@
 
     /* remove unnecssary buttons/icons */
     .top-nav__prime,
-    button[aria-label="Get Bits"] {
+    button[aria-label='Get Bits'] {
         display: none !important;
     }
 }

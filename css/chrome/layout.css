@@ -17,6 +17,7 @@ toolbarbutton#forward-button {
 toolbarbutton#nav-bar-overflow-button > image {
     color: transparent;
 }
+
 toolbarbutton#nav-bar-overflow-button:hover > image {
     color: white;
 }
@@ -57,7 +58,8 @@ hbox#star-button-box {
 
 #navigator-toolbox-background {
     background: linear-gradient(to right, black 260px, transparent 0);
-    appearance: none !important /* remove gtk background color */
+    appearance: none !important;
+    /* remove gtk background color */
 }
 
 #navigator-toolbox {
@@ -92,13 +94,15 @@ hbox#star-button-box {
 }
 
 /* smaller shield/identity/permission boxes */
-#tracking-protection-icon-container, #identity-box > box {
+#tracking-protection-icon-container,
+#identity-box > box {
     padding: 0 2px !important;
 }
+
 :is(#tracking-protection-icon-container, #identity-box) > box > image {
     width: 13.6px !important;
     margin: 0 auto !important;
-    padding: 0 !important
+    padding: 0 !important;
 }
 
 #notification-popup-box {
@@ -113,20 +117,22 @@ hbox#star-button-box {
 }
 
 /* show icons on hover */
-#nav-bar:hover :is(
-    #tracking-protection-icon-container,
-    #identity-icon-box,
-    #identity-permission-box
-) {
+#nav-bar:hover
+    :is(
+        #tracking-protection-icon-container,
+        #identity-icon-box,
+        #identity-permission-box
+    ) {
     visibility: visible;
 }
 
 /* show icons when menu open */
-#nav-bar:has(box[open="true"]) :is(
-    #tracking-protection-icon-container,
-    #identity-icon-box,
-    #identity-permission-box
-) {
+#nav-bar:has(box[open='true'])
+    :is(
+        #tracking-protection-icon-container,
+        #identity-icon-box,
+        #identity-permission-box
+    ) {
     visibility: visible;
 }
 
@@ -177,20 +183,22 @@ hbox#star-button-box {
 }
 
 /* visible when address bar is hovered */
-#nav-bar:hover :is(
-    #unified-extensions-button,
-    #nav-bar-overflow-button,
-    #PanelUI-menu-button
-) {
+#nav-bar:hover
+    :is(
+        #unified-extensions-button,
+        #nav-bar-overflow-button,
+        #PanelUI-menu-button
+    ) {
     visibility: visible;
 }
 
 /* visible when a menu is open */
-#nav-bar:has(toolbarbutton[open="true"]) :is(
-    #unified-extensions-button,
-    #nav-bar-overflow-button,
-    #PanelUI-menu-button
-) {
+#nav-bar:has(toolbarbutton[open='true'])
+    :is(
+        #unified-extensions-button,
+        #nav-bar-overflow-button,
+        #PanelUI-menu-button
+    ) {
     visibility: visible;
 }
 

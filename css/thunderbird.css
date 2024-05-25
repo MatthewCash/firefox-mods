@@ -1,6 +1,6 @@
 :root {
     --tree-view-bg: black !important;
-    
+
     --treeitem-background-selected: var(--global-accent-color) !important;
     --listbox-selected-bg: var(--global-accent-color) !important;
     --listbox-focused-selected-bg: var(--global-accent-color) !important;
@@ -21,6 +21,6 @@
     color: var(--global-accent-color) !important;
 }
 
-tr[is="thread-row"] {
+tr[is='thread-row'] {
     color: white !important;
 }

@@ -1,15 +1,36 @@
-*, :root {
+*,
+:root {
     --global-hue: var(--system-hue);
     --global-saturation: var(--system-saturation);
     --global-lightness: var(--system-lightness);
-    --global-accent-color: hsl(var(--global-hue), var(--global-saturation), var(--global-lightness));
-    --global-accent-color-dark: hsl(var(--global-hue), var(--global-saturation), calc(var(--global-lightness) - 5%));
-    --global-accent-color-darker: hsl(var(--global-hue), var(--global-saturation), calc(var(--global-lightness) - 10%));
+    --global-accent-color: hsl(
+        var(--global-hue),
+        var(--global-saturation),
+        var(--global-lightness)
+    );
+    --global-accent-color-dark: hsl(
+        var(--global-hue),
+        var(--global-saturation),
+        calc(var(--global-lightness) - 5%)
+    );
+    --global-accent-color-darker: hsl(
+        var(--global-hue),
+        var(--global-saturation),
+        calc(var(--global-lightness) - 10%)
+    );
 
-    --in-content-primary-button-background: var(--global-accent-color) !important;
-    --in-content-primary-button-background-hover: var(--global-accent-color-dark) !important;
-    --in-content-primary-button-background-active: var(--global-accent-color-darker) !important;
-    --panel-banner-item-update-supported-bgcolor: var(--global-accent-color) !important;
+    --in-content-primary-button-background: var(
+        --global-accent-color
+    ) !important;
+    --in-content-primary-button-background-hover: var(
+        --global-accent-color-dark
+    ) !important;
+    --in-content-primary-button-background-active: var(
+        --global-accent-color-darker
+    ) !important;
+    --panel-banner-item-update-supported-bgcolor: var(
+        --global-accent-color
+    ) !important;
     --lwt-brighttext-url-color: var(--global-accent-color) !important;
 
     --in-content-background-color: black !important;
@@ -17,10 +38,13 @@
     --focus-outline-color: var(--global-accent-color) !important;
 
     --toggle-background-color-pressed: var(--global-accent-color) !important;
-    --toggle-background-color-pressed-hover: var(--global-accent-color-dark) !important;
+    --toggle-background-color-pressed-hover: var(
+        --global-accent-color-dark
+    ) !important;
 }
 
-a, :link {
+a,
+:link {
     color: var(--global-accent-color) !important;
 }
 

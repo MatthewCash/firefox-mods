@@ -3,9 +3,21 @@
         --site-hue: var(--global-hue);
         --site-saturation: var(--global-saturation);
         --site-lightness: var(--global-lightness);
-        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
-        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
-        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+        --site-accent-color: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            var(--site-lightness)
+        );
+        --site-accent-color-dark: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 5%)
+        );
+        --site-accent-color-darker: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 10%)
+        );
     }
 
     #main-view,
@@ -17,7 +29,8 @@
         background-color: black !important;
     }
 
-    .bg-secondary, .bg-secondary-lighter {
+    .bg-secondary,
+    .bg-secondary-lighter {
         background-color: black !important;
     }
 
@@ -28,7 +41,7 @@
 
     /* hide volume scrubber head */
     .vjs-volume-level::before {
-        content: "" !important;
+        content: '' !important;
     }
 
     /* accent color */
@@ -63,7 +76,11 @@
         background-color: var(--site-accent-color-darker) !important;
     }
     .variant-action:disabled {
-        background-color: hsl(var(--site-hue), calc(var(--site-saturation) - 30%), calc(var(--site-lightness) - 40%)) !important;
+        background-color: hsl(
+            var(--site-hue),
+            calc(var(--site-saturation) - 30%),
+            calc(var(--site-lightness) - 40%)
+        ) !important;
     }
 
     /* online channel indicator */

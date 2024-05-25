@@ -1,11 +1,24 @@
-@-moz-document url-prefix("https://www.youtube.com") {
+@-moz-document url-prefix("https://www.youtube.com")
+{
     :root {
         --site-hue: var(--global-hue);
         --site-saturation: var(--global-saturation);
         --site-lightness: var(--global-lightness);
-        --site-accent-color: hsl(var(--site-hue), var(--site-saturation), var(--site-lightness));
-        --site-accent-color-dark: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 5%));
-        --site-accent-color-darker: hsl(var(--site-hue), var(--site-saturation), calc(var(--site-lightness) - 10%));
+        --site-accent-color: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            var(--site-lightness)
+        );
+        --site-accent-color-dark: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 5%)
+        );
+        --site-accent-color-darker: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 10%)
+        );
     }
 
     html {
@@ -79,8 +92,8 @@
 
     /* hide join, share, donation buttons */
     #sponsor-button,
-    button[aria-label="Thanks"],
-    button[aria-label="Share"] {
+    button[aria-label='Thanks'],
+    button[aria-label='Share'] {
         display: none !important;
     }
 
@@ -98,11 +111,11 @@
     .ytp-autohide .ytp-chrome-bottom {
         opacity: 0.7 !important;
         visibility: collapse !important;
-        transition: visibility .1s cubic-bezier(.4,0,1,1) !important;
+        transition: visibility 0.1s cubic-bezier(0.4, 0, 1, 1) !important;
     }
     .ytp-autohide .ytp-chrome-bottom > .ytp-progress-bar-container {
         bottom: 0 !important;
-        transition: bottom .2s cubic-bezier(.4,0,1,1)
+        transition: bottom 0.2s cubic-bezier(0.4, 0, 1, 1);
     }
     .ytp-chapters-container {
         visibility: visible !important;
@@ -112,7 +125,7 @@
     }
 
     /* hide View Products overlay */
-    button[aria-label="View products"] {
+    button[aria-label='View products'] {
         display: none !important;
     }
 }
