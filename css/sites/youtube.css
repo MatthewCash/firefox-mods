@@ -137,4 +137,9 @@
     button[aria-label='View products'] {
         display: none !important;
     }
+
+    /* round video player */
+    video {
+        border-radius: 10px !important;
+    }
 }
