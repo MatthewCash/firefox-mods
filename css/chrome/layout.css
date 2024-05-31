@@ -41,7 +41,7 @@ hbox#star-button-box {
     border-width: 0 !important;
 }
 
-/* Remove white line between Vertical tabs and browser content */
+/* Remove line between Vertical tabs and browser content */
 #sidebar-splitter {
     display: none;
 }
@@ -52,26 +52,27 @@ hbox#star-button-box {
 #nav-bar-customization-target,
 #urlbar-container,
 #urlbar,
-#urlbar-background {
+#urlbar-background,
+#tabbrowser-tabpanels,
+#webextpanels-window {
     background-color: transparent !important;
 }
 
+html[sizemode="maximized"] {
+    background-color: black !important;
+}
+
+html[sizemode="normal"][windowtype="navigator:browser"] {
+    background-color: #40404040 !important;
+}
+
+/* remove gtk background color */
 #navigator-toolbox-background {
-    background: linear-gradient(to right, black 260px, transparent 0);
     appearance: none !important;
-    /* remove gtk background color */
 }
 
 #navigator-toolbox {
     background-image: unset !important;
-}
-
-/* Background Image */
-#main-window {
-    background-color: black !important;
-    background-position: right top !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
 }
 
 #navigator-toolbox {
