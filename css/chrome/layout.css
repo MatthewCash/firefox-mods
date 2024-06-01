@@ -144,11 +144,11 @@ html[sizemode="normal"][windowtype="navigator:browser"] {
 
 /* urlbar height */
 #urlbar-container {
-    --urlbar-container-height: 34px !important;
+    --urlbar-container-height: 32px !important;
 }
 
 #urlbar {
-    --urlbar-toolbar-height: 34px !important;
+    --urlbar-toolbar-height: 32px !important;
 }
 
 /* addressbar dropdown background */
