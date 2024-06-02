@@ -6,9 +6,12 @@
     flex-basis: 100% !important;
 }
 
+#sidebar-box {
+    background-color: transparent !important;
+}
+
 #sidebar-draggable {
     height: 100%;
-    background-color: black;
     flex: 1;
     -moz-window-dragging: drag;
 }
