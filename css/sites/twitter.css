@@ -20,6 +20,16 @@
         );
     }
 
+    body,
+    .r-kemksi,
+    .r-5zmot {
+        background-color: transparent !important;
+    }
+
+    .r-z32n2g {
+        background-color: #00000050 !important;
+    }
+
     .r-1cvl2hr,
     *[style*='color: rgb(29, 155, 240);'] {
         color: var(--site-accent-color) !important;
