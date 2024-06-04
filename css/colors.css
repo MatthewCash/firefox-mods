@@ -33,7 +33,7 @@
     ) !important;
     --lwt-brighttext-url-color: var(--global-accent-color) !important;
 
-    --in-content-background-color: black !important;
+    --in-content-background-color: transparent !important;
     --in-content-page-background: var(--in-content-background-color) !important;
     --focus-outline-color: var(--global-accent-color) !important;
 
