@@ -8,6 +8,7 @@
 
 #sidebar-box {
     background-color: transparent !important;
+    margin-right: 4px;
 }
 
 #sidebar-draggable {
