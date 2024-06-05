@@ -21,12 +21,25 @@
     }
 
     div#tabbar-container {
-        background-color: black;
+        background-color: transparent !important;
+    }
+
+    #background {
+        display: none !important;
+    }
+
+    #dummy-tabs > tab-item,
+    #dummy-favicon-size-box {
+        visibility: hidden !important;
     }
 
     #tabbar {
         justify-content: space-between;
-        margin-top: -2px !important;
+    }
+
+    .tabs {
+        overflow-y: scroll !important;
+        height: 100vh;
     }
 
     .newtab-action-selector-anchor {
@@ -49,7 +62,7 @@
     }
 
     tab-item:hover {
-        background-color: #303030;
+        background-color: #00000080;
     }
 
     tab-item.active {
