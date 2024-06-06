@@ -76,7 +76,8 @@
     ytd-app,
     #full-bleed-container,
     #container,
-    .ytd-playlist-panel-renderer {
+    .ytd-playlist-panel-renderer,
+    #movie_player {
         background-color: transparent !important;
     }
 
@@ -141,5 +142,31 @@
     /* round video player */
     video {
         border-radius: 10px !important;
+    }
+
+    .ytp-gradient-bottom {
+        display: none;
+    }
+    #movie_player:hover video {
+        mask: linear-gradient(to top, transparent, black 100px);
+    }
+
+    /* make player size dynamic */
+    #player-container,
+    video.html5-main-video {
+        position: relative !important;
+    }
+    #full-bleed-container {
+        min-height: unset !important;
+        max-height: unset !important;
+        height: unset !important;
+    }
+    ytd-player:not(.ytd-shorts) video.html5-main-video {
+        left: 0 !important;
+        margin: auto !important;
+        height: 100% !important;
+        width: 100% !important;
+        max-height: 79vh !important;
+        object-fit: contain !important;
     }
 }
