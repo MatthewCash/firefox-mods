@@ -169,4 +169,7 @@
         max-height: 79vh !important;
         object-fit: contain !important;
     }
+    #player-container-inner {
+        padding: 0 !important;
+    }
 }
