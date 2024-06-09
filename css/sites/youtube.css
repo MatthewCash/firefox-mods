@@ -172,4 +172,9 @@
     #player-container-inner {
         padding: 0 !important;
     }
+
+    /* hide black shorts background */
+    #cinematic-container {
+        display: none;
+    }
 }
