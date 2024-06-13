@@ -62,7 +62,7 @@
     }
 
     tab-item:hover {
-        background-color: #00000080;
+        background-color: #80808080;
     }
 
     tab-item.active {
