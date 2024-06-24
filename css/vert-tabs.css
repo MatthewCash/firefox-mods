@@ -38,8 +38,11 @@
     }
 
     .tabs {
-        overflow-y: scroll !important;
         height: 100vh;
+    }
+
+    #normal-tabs-container {
+        overflow-y: scroll !important;
     }
 
     .newtab-action-selector-anchor {

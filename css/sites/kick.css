@@ -25,13 +25,16 @@
     .sidebar-item:not(:hover, :active), /* channel list items */
     chat-content, /* chat header and messages */
     .chatroom-footer, /* chat input */
-    input {
-        background-color: black !important;
+    .bg-secondary-dark,
+    input,
+    nav,
+    body {
+        background-color: transparent !important;
     }
 
-    .bg-secondary,
-    .bg-secondary-lighter {
-        background-color: black !important;
+    div.bg-secondary-lighter {
+        background-color: #ffffff15 !important;
+        border-radius: 1em !important;
     }
 
     /* remove border from channel list */
