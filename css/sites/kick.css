@@ -28,7 +28,8 @@
     .bg-secondary-dark,
     input,
     nav,
-    body {
+    body,
+    .video-js {
         background-color: transparent !important;
     }
 
