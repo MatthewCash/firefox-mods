@@ -20,19 +20,20 @@
         );
     }
 
-    /* change logo color */
-    [fill='#85C742'] {
-        fill: var(--site-accent-color) !important;
+    html {
+        --color-bg-default: transparent !important;
+        --color-bg-featured: transparent !important;
+        --darkest: transparent !important;
     }
-
-    /* hide upload button */
-    .header-upload {
-        display: none !important;
+    .videoPlayer-Rumble-cls {
+        &,
+        > div {
+            background-color: transparent !important;
+        }
     }
-
-    /* hide join button */
-    button[data-context='video'] {
-        display: none !important;
+    .media-theater-container,
+    .header-search {
+        background-color: transparent !important;
     }
 
     /* progress bar */
