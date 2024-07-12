@@ -59,6 +59,11 @@
         display: none !important;
     }
 
+    /* hide verified orgs tab */
+    a[href='/i/verified-orgs-signup'] {
+        display: none !important;
+    }
+
     /* verified badge */
     svg[aria-label='Verified account'] * {
         fill: var(--site-accent-color) !important;
