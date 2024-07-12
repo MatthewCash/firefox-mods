@@ -36,15 +36,12 @@
         background-color: transparent !important;
     }
 
-    /* progress bar */
-    .videoPlayer-Rumble-cls
-        > div:nth-child(1)
-        > div:nth-child(3)
-        > div:nth-child(2)
-        > div:nth-child(1)
-        > div:nth-child(1)
-        > div:nth-child(n + 2) {
-        background-color: var(--site-accent-color) !important;
+    /* change logo color */
+    #rumble-logo__mark-wordmark > path:not(:last-child) {
+        fill: white !important;
+    }
+    #rumble-logo__mark-wordmark > path:last-child {
+        fill: var(--site-accent-color) !important;
     }
 
     /* live indicator */
