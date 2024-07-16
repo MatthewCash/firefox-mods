@@ -69,13 +69,9 @@
         }
     }
 
-    /* play/pause icons */
-    .videoPlayer-Rumble-cls
-        > div
-        > div:nth-child(n + 4):nth-child(-n + 5)
-        > div,
-    #videoPlayer:hover .bigPlayUIInner.ctp {
-        background-color: var(--site-accent-color) !important;
+    /* hide upload button */
+    .header-upload {
+        display: none !important;
     }
 
     /* remove borders */
