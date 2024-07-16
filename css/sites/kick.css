@@ -38,6 +38,10 @@
         border-radius: 1em !important;
     }
 
+    video {
+        border-radius: 10px !important;
+    }
+
     /* remove border from channel list */
     .w-full {
         border-width: 0 !important;
