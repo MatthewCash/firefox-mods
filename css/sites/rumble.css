@@ -74,6 +74,16 @@
         display: none !important;
     }
 
+    /* hide unexpanded menu */
+    html:not(.main-menu-expanded) {
+        #main-menu {
+            display: none !important;
+        }
+        main {
+            margin-left: 0 !important;
+        }
+    }
+
     /* remove borders */
     #theaterVideoPlayer {
         border-width: 0 !important;
