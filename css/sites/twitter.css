@@ -119,7 +119,8 @@
 
     /* hide ads */
     aside[aria-label='Get Verified'],
-    aside[aria-label='Subscribe to Premium'] {
+    aside[aria-label='Subscribe to Premium'],
+    div:has(> div > [aria-label="Stay organized with Bookmark Folders"]) {
         display: none !important;
     }
 
