@@ -84,6 +84,11 @@
         }
     }
 
+    /* hide join button */
+    button[data-context='video'] {
+        display: none !important;
+    }
+
     /* remove borders */
     #theaterVideoPlayer {
         border-width: 0 !important;
