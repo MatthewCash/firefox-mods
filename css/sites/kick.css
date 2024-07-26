@@ -95,4 +95,13 @@
     .border-primary {
         border-color: var(--site-accent-color) !important;
     }
+
+    /* move channels to the right */
+    .main-html
+        > div:nth-child(1)
+        > div:nth-child(1)
+        > div:nth-child(2)
+        > div:nth-child(1) {
+        order: 1;
+    }
 }
