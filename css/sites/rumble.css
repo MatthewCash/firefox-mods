@@ -95,7 +95,8 @@
     }
 
     /* remove borders */
-    #theaterVideoPlayer {
+    .header,
+    .media-info {
         border-width: 0 !important;
     }
 
