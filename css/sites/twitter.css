@@ -26,6 +26,8 @@
         background-color: transparent !important;
     }
 
+    div[data-testid="HoverCard"],
+    .r-1r851ge,
     .r-11z020y {
         background-color: black !important;
     }
