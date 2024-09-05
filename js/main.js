@@ -4,9 +4,12 @@ const EXPORTED_SYMBOLS = [];
     const run = window => {
         const { document } = window;
 
-        document
-            .querySelector('#main-window')
-            .setAttribute('chromemargin', '0,0,0,0');
+        const mainWindow = document.querySelector('#main-window');
+
+        mainWindow.setAttribute('chromemargin', '0,0,0,0');
+
+        if (mainWindow.getAttribute('sizemode') === 'normal')
+            mainWindow.setAttribute('hidechrome', 'true');
 
         const onTabUpdate = () => {
             const inNewTab = ['about:newtab', 'about:blank'].includes(
@@ -35,6 +38,26 @@ const EXPORTED_SYMBOLS = [];
             { attributes: true, childList: true, subtree: true }
         );
 
+        const onWindowAttributeChange = mutations => {
+            mutations.forEach(mutation => {
+                if (mutation.type !== 'attributes') return;
+                if (mutation.attributeName !== 'sizemode') return;
+
+                if (mainWindow.getAttribute('sizemode') === 'normal') {
+                    mainWindow.setAttribute('hidechrome', 'true');
+                } else {
+                    mainWindow.setAttribute('hidechrome', 'false');
+                }
+            });
+        };
+
+        new window.MutationObserver(onWindowAttributeChange).observe(
+            mainWindow,
+            {
+                attributes: true
+            }
+        );
+
         const draggable = document.createElement('div');
         draggable.id = 'sidebar-draggable';
         document.querySelector('#sidebar-box').appendChild(draggable);
@@ -54,7 +77,7 @@ const EXPORTED_SYMBOLS = [];
                     false
                 );
             }
-            observe(aSubject, topic) {
+            observe(aSubject, _topic) {
                 aSubject.addEventListener('DOMContentLoaded', this, {
                     once: true
                 });
