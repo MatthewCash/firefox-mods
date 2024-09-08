@@ -141,6 +141,11 @@
         color: var(--darkreader-text--ic-brand-button--primary-text) !important;
     }
 
+    .css-ynb68u-text,
+    .css-3akiw1-view-link:is(button) {
+        color: var(--site-accent-color-dark) !important;
+    }
+
     /* fix invisible menu item text */
     *[role='menuitem'].ui-state-focus {
         color: white !important;
