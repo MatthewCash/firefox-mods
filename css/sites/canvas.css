@@ -161,4 +161,13 @@
     .StickyButton-styles__root {
         background-color: var(--site-accent-color-dark) !important;
     }
+
+    /* focus outlines */
+    .css-1mg6tgv-toggleDetails__toggle::before,
+    .css-h2cvja-view--inlineBlock-baseButton::before {
+        border-color: var(--site-accent-color) !important;
+    }
+    .css-3akiw1-view-link:is(a):focus {
+        outline-color: var(--site-accent-color) !important;
+    }
 }
