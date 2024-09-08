@@ -170,4 +170,12 @@
     .css-3akiw1-view-link:is(a):focus {
         outline-color: var(--site-accent-color) !important;
     }
+
+    /* unread badge */
+    .css-nriu7q-view--inlineBlock-badge {
+        background-color: var(--site-accent-color) !important;
+    }
+    .css-31gkb3-baseButton__iconSVG path {
+        fill: var(--site-accent-color) !important;
+    }
 }
