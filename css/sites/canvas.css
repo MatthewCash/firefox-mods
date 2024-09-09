@@ -178,4 +178,10 @@
     .css-31gkb3-baseButton__iconSVG path {
         fill: var(--site-accent-color) !important;
     }
+
+    /* buttons */
+    .css-g9zl5f-baseButton__content {
+        background-color: var(--site-accent-color-dark) !important;
+        border-color: var(--site-accent-color) !important;
+    }
 }
