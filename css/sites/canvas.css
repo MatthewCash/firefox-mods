@@ -137,6 +137,10 @@
         --eHQDY-color: var(--site-accent-color) !important;
     }
 
+    textarea {
+        background-color: black !important;
+    }
+
     .btn {
         color: var(--darkreader-text--ic-brand-button--primary-text) !important;
     }
