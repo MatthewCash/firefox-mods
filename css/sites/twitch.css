@@ -21,9 +21,9 @@
     }
 
     .tw-root--theme-dark {
-        --color-background-base: black !important;
-        --color-background-alt: black !important;
-        --color-background-body: black !important;
+        --color-background-base: transparent !important;
+        --color-background-alt: transparent !important;
+        --color-background-body: transparent !important;
         --color-background-float: rgba(0, 0, 0, 0.9) !important;
 
         --color-background-button-primary-default: var(
@@ -38,10 +38,13 @@
 
         --border-width-default: 0 !important;
     }
+    .Layout-sc-1xcs6mc-0 > div {
+        background-color: transparent !important;
+    }
 
     /* chat background */
     .chat-room {
-        background-color: black !important;
+        background-color: transparent !important;
     }
 
     /* remove unnecssary buttons/icons */
