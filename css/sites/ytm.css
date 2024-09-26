@@ -1,0 +1,59 @@
+@-moz-document regexp("^https:\/\/music\.youtube\.com.*$") {
+    :root {
+        --site-hue: var(--global-hue);
+        --site-saturation: var(--global-saturation);
+        --site-lightness: var(--global-lightness);
+        --site-accent-color: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            var(--site-lightness)
+        );
+        --site-accent-color-dark: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 5%)
+        );
+        --site-accent-color-darker: hsl(
+            var(--site-hue),
+            var(--site-saturation),
+            calc(var(--site-lightness) - 10%)
+        );
+    }
+
+    html {
+        --ytmusic-color-black1: transparent !important;
+        --ytmusic-color-black4: transparent !important;
+    }
+
+    body {
+        background-color: transparent !important;
+    }
+
+    #nav-bar-divider,
+    #nav-bar-background,
+    #mini-guide-background,
+    #background {
+        display: none;
+    }
+
+    #guide-wrapper {
+        border: none !important;
+    }
+
+    .background-gradient {
+        background: transparent !important;
+    }
+
+    .ytmusic-logo {
+        filter: hue-rotate(-30deg) brightness(2);
+    }
+
+    #primaryProgress {
+        background: var(--site-accent-color-dark) !important;
+    }
+
+    #sliderKnob > .slider-knob-inner {
+        background: var(--site-accent-color-darker) !important;
+        border-color: var(--site-accent-color-darker) !important;
+    }
+}
