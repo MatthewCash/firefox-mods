@@ -52,4 +52,8 @@
     button[aria-label='Get Bits'] {
         display: none !important;
     }
+
+    video {
+        border-radius: 10px !important;
+    }
 }
