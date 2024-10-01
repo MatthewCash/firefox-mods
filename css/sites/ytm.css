@@ -71,4 +71,11 @@
     .lyrics-container li.active a {
         color: var(--site-accent-color) !important;
     }
+
+    #sliderKnob {
+        transition: left linear 1s;
+    }
+    #primaryProgress {
+        transition: transform linear 1s;
+    }
 }
