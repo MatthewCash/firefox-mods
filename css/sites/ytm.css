@@ -56,4 +56,19 @@
         background: var(--site-accent-color-darker) !important;
         border-color: var(--site-accent-color-darker) !important;
     }
+
+    /* live lyrics */
+    .lyrics-container {
+        backdrop-filter: blur(25px);
+        background-color: rgba(0, 0, 0, 0.2) !important;
+    }
+    .lyrics-container a {
+        color: white !important;
+    }
+    .lyrics-container li {
+        opacity: 1 !important;
+    }
+    .lyrics-container li.active a {
+        color: var(--site-accent-color) !important;
+    }
 }
