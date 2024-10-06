@@ -20,22 +20,12 @@
         );
     }
 
-    #main-view,
-    .sidebar, /* channel list */
-    .sidebar-item:not(:hover, :active), /* channel list items */
-    chat-content, /* chat header and messages */
-    .chatroom-footer, /* chat input */
-    .bg-secondary-dark,
-    input,
-    nav,
-    body,
-    .video-js {
-        background-color: transparent !important;
+    html {
+        --background-color: transparent !important;
     }
 
-    div.bg-secondary-lighter {
-        background-color: #ffffff15 !important;
-        border-radius: 1em !important;
+    .bg-surface-lower {
+        --tw-bg-opacity: 0 !important;
     }
 
     video {
