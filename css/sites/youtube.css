@@ -41,6 +41,7 @@
     .badge-style-type-live-now-alternate, /* live indicator */
     .ytp-live-badge[disabled]::before /* live indicator in video controls */ {
         background-color: var(--site-accent-color) !important;
+        background-image: unset !important;
     }
 
     /* change logo color */
@@ -74,6 +75,7 @@
     /* make background transparent */
     html,
     ytd-app,
+    #background,
     #full-bleed-container,
     #container,
     .ytd-playlist-panel-renderer,
