@@ -163,7 +163,7 @@
         max-height: unset !important;
         height: unset !important;
     }
-    ytd-player:not(.ytd-shorts) video.html5-main-video {
+    ytd-player:not(.ytd-shorts) #movie_player:not(.ytp-fullscreen) video.html5-main-video {
         left: 0 !important;
         margin: auto !important;
         height: 100% !important;
