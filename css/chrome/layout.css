@@ -1,5 +1,5 @@
 /* Hide Horizontal Tabs and Titlebar */
-vbox#titlebar {
+#toolbar-menubar, #TabsToolbar {
     display: none;
 }
 
@@ -25,16 +25,6 @@ toolbarbutton#nav-bar-overflow-button:hover > image {
 /* Hide Star in Omnibox */
 hbox#star-button-box {
     display: none;
-}
-
-/* Make URL bar taller */
-#urlbar {
-    top: 0 !important;
-    height: 100% !important;
-}
-
-#urlbar[breakout][breakout-extend] {
-    height: auto !important;
 }
 
 #nav-bar {
@@ -145,6 +135,7 @@ html[sizemode="normal"][windowtype="navigator:browser"] {
 /* urlbar height */
 #urlbar-container {
     --urlbar-container-height: 32px !important;
+    padding: 0 !important;
 }
 
 #urlbar {
