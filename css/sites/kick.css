@@ -42,50 +42,6 @@
         content: '' !important;
     }
 
-    /* accent color */
-    .text-primary,
-    .live-tag-component,
-    .vjs-control:hover,
-    .vjs-live-display,
-    .lg\:hover\:text-primary:hover,
-    .link {
-        color: var(--site-accent-color) !important;
-    }
-    .avatar-live-tag,
-    .item-status-indicator,
-    .vjs-volume-level {
-        background-color: var(--site-accent-color) !important;
-    }
-    .avatar-holder-live .owner-avatar::after {
-        box-shadow: var(--site-accent-color) 0 0 0 2px !important;
-    }
-    .\!border-primary\/100 {
-        border-color: var(--site-accent-color) !important;
-    }
-    .variant-action {
-        background-color: var(--site-accent-color) !important;
-    }
-    .variant-action:hover,
-    .vjs-menu li:hover {
-        background-color: var(--site-accent-color-dark) !important;
-    }
-    .variant-action:active,
-    .vjs-menu li.vjs-selected {
-        background-color: var(--site-accent-color-darker) !important;
-    }
-    .variant-action:disabled {
-        background-color: hsl(
-            var(--site-hue),
-            calc(var(--site-saturation) - 30%),
-            calc(var(--site-lightness) - 40%)
-        ) !important;
-    }
-
-    /* online channel indicator */
-    .border-primary {
-        border-color: var(--site-accent-color) !important;
-    }
-
     /* move channels to the right */
     .main-html
         > div:nth-child(1)
