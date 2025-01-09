@@ -29,6 +29,10 @@
         background-color: transparent !important;
     }
 
+    #progress {
+        background: var(--site-accent-color) !important;
+    }
+
     #nav-bar-divider,
     #nav-bar-background,
     #mini-guide-background,
