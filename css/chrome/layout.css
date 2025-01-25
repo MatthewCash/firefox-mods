@@ -1,5 +1,6 @@
 /* Hide Horizontal Tabs and Titlebar */
-#toolbar-menubar, #TabsToolbar {
+#toolbar-menubar,
+#TabsToolbar {
     display: none;
 }
 
@@ -37,6 +38,7 @@ hbox#star-button-box {
 }
 
 /* Transparent Elements */
+#browser,
 #navigator-toolbox,
 #nav-bar,
 #nav-bar-customization-target,
@@ -45,14 +47,10 @@ hbox#star-button-box {
 #urlbar-background,
 #tabbrowser-tabpanels,
 #webextpanels-window {
-    background-color: transparent !important;
+    background: transparent !important;
 }
 
-html[sizemode="maximized"] {
-    background-color: black !important;
-}
-
-html[sizemode="normal"][windowtype="navigator:browser"] {
+html[sizemode='normal'][windowtype='navigator:browser'] {
     background-color: #40404040 !important;
 }
 

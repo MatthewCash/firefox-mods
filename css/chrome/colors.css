@@ -7,6 +7,10 @@
     --gnome-focused-urlbar-border-color: var(--global-accent-color) !important;
 }
 
+html {
+    background-color: black !important;
+}
+
 /* Autocomplete dropdowns */
 .autocomplete-richlistitem[selected],
 treechildren.searchbar-treebody::-moz-tree-row(selected) {
