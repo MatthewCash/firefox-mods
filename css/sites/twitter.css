@@ -26,7 +26,7 @@
         background-color: transparent !important;
     }
 
-    div[data-testid="HoverCard"],
+    div[data-testid='HoverCard'],
     .r-1r851ge,
     .r-11z020y {
         background-color: black !important;
@@ -120,9 +120,10 @@
     }
 
     /* hide ads */
+    div[data-testid=super-upsell-UpsellCardRenderProperties],
     aside[aria-label='Get Verified'],
     aside[aria-label='Subscribe to Premium'],
-    div:has(> div > [aria-label="Stay organized with Bookmark Folders"]) {
+    div:has(> div > [aria-label='Stay organized with Bookmark Folders']) {
         display: none !important;
     }
 
