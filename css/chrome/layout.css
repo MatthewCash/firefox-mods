@@ -51,6 +51,10 @@ hbox#star-button-box {
     background: transparent !important;
 }
 
+.urlbar-background {
+    display: none;
+}
+
 html[sizemode='normal'][windowtype='navigator:browser'] {
     background-color: #40404040 !important;
 }
