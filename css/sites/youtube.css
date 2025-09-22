@@ -79,15 +79,16 @@
     #full-bleed-container,
     #container,
     .ytd-playlist-panel-renderer,
+    .ytSearchboxComponentInputBox,
     #movie_player {
         background-color: transparent !important;
     }
 
     /* hide search button */
-    #search-icon-legacy {
+    .ytSearchboxComponentSearchButton  {
         display: none;
     }
-    #container.style-scope.ytd-searchbox {
+    .ytSearchboxComponentInputBox {
         border-radius: 40px !important;
         border: 1px solid var(--ytd-searchbox-legacy-border-color) !important;
     }
