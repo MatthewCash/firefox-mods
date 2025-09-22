@@ -98,7 +98,7 @@
     }
 
     /* hide create button */
-    #buttons > ytd-topbar-menu-button-renderer:nth-child(1) {
+    button[aria-label="Create"] {
         display: none !important;
     }
 
