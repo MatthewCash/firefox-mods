@@ -151,7 +151,7 @@ html[sizemode='normal'][windowtype='navigator:browser'] {
 }
 
 /* hide addressbar shadow */
-#urlbar-background {
+.urlbar-background {
     display: none !important;
 }
 
