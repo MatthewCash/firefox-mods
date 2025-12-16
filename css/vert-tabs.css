@@ -18,6 +18,8 @@
             var(--saturation),
             calc(var(--lightness) - 10%)
         );
+
+        --browser-background: transparent !important;
     }
 
     div#tabbar-container {
