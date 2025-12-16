@@ -26,7 +26,7 @@
         background-color: transparent !important;
     }
 
-    #background {
+    #background, .background {
         display: none !important;
     }
 
