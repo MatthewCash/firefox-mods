@@ -12,8 +12,9 @@
 }
 
 #messagePane,
-#messagepanebox {
-    background-color: black !important;
+#messagepanebox,
+#tabs-toolbar {
+    background: black !important;
 }
 
 /* message info */
