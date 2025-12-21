@@ -12,7 +12,7 @@ try {
         manager
             .QueryInterface(interfaces.nsIComponentRegistrar)
             .autoRegister(manifest);
-        utils.import('chrome://mods/content/entrypoint.js');
+        ChromeUtils.importESModule('chrome://mods/content/entrypoint.js');
     }
 } catch (error) {
     Services.prompt.alert(null, 'Failed to load JS module!', error);
