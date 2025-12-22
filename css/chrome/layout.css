@@ -56,7 +56,7 @@ hbox#star-button-box {
     display: none;
 }
 
-html[sizemode='normal'][windowtype='navigator:browser'] {
+html[sizemode='normal'][windowtype='navigator:browser'] > body {
     background-color: #40404040 !important;
 }
 
