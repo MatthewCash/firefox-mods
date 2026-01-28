@@ -31,6 +31,28 @@ const EXPORTED_SYMBOLS = [];
             }
         );
 
+        // FIXME: remove once 148b7 makes it to nixos-unstable
+        const monitorBrowserTransparency = browser => {
+            browser.setAttribute('transparent', 'true');
+
+            // The property seems to get reset immediately, so keep watching
+            const observer = new window.MutationObserver(() => {
+                if (browser.getAttribute('transparent') !== 'true') {
+                    browser.setAttribute('transparent', 'true');
+                }
+            });
+
+            observer.observe(browser, {
+                attributes: true,
+                attributeFilter: ['transparent']
+            });
+        };
+        window.gBrowser.tabContainer.addEventListener('TabOpen', event => {
+            const browser = event.target.linkedBrowser;
+            if (browser) monitorBrowserTransparency(browser);
+        });
+        window.gBrowser.browsers.forEach(monitorBrowserTransparency);
+
         const draggable = document.createElement('div');
         draggable.id = 'sidebar-draggable';
         document.querySelector('#sidebar-box').appendChild(draggable);
