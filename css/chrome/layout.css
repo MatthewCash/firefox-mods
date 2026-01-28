@@ -48,7 +48,8 @@ hbox#star-button-box {
 #tabbrowser-tabpanels,
 #webextpanels-window,
 #sidebar,
-#sidebar-box {
+#sidebar-box,
+.browserContainer {
     background: transparent !important;
 }
 
