@@ -1,12 +1,11 @@
 const EXPORTED_SYMBOLS = [];
 
 (() => {
-    console.log("Starting main script...");
+    console.log('Starting main script...');
 
-    const run = window => {
-        console.log("Running main-window setup...");
+    const init = window => {
+        console.log('Running main-window setup...');
         const { document } = window;
-
         const mainWindow = document.querySelector('#main-window');
 
         if (mainWindow.getAttribute('sizemode') === 'normal')
@@ -40,27 +39,23 @@ const EXPORTED_SYMBOLS = [];
     };
 
     try {
-        const chromeRegex =
-            /^(chrome:(?!\/\/(global\/content\/commonDialog|browser\/content\/webext-panels)\.x?html)|about:(?!blank))/i;
-
         class ChromeDocumentObserver {
             constructor() {
-                Services.obs.addObserver(
-                    this,
-                    'chrome-document-global-created',
-                    false
+                Services.obs.addObserver(this, 'domwindowopened', false);
+            }
+            observe(subject, topic) {
+                // this is gross but the best I could think of
+                let checkInterval = subject.setInterval(() => {
+                    if (subject.document.querySelector('#main-window')) {
+                        subject.clearInterval(checkInterval);
+                        init(subject);
+                    }
+                }, 1);
+
+                subject.setTimeout(
+                    () => subject.clearInterval(checkInterval),
+                    5000
                 );
-            }
-            observe(aSubject, _topic) {
-                aSubject.addEventListener('DOMContentLoaded', this, {
-                    once: true
-                });
-            }
-            handleEvent(event) {
-                const document = event.originalTarget;
-                const window = document.defaultView;
-                if (chromeRegex.test(window.location.href))
-                    run(window);
             }
         }
 
