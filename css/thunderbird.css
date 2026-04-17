@@ -1,5 +1,7 @@
 :root {
     --tree-view-bg: black !important;
+    --sidebar-background: black !important;
+    --toolbar-bgcolor: black !important;
 
     --treeitem-background-selected: var(--global-accent-color) !important;
     --listbox-selected-bg: var(--global-accent-color) !important;
@@ -24,4 +26,8 @@
 
 tr[is='thread-row'] {
     color: white !important;
+}
+
+#navigation-toolbox {
+    background: black !important;
 }
