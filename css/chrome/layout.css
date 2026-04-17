@@ -57,6 +57,10 @@ hbox#star-button-box {
     display: none;
 }
 
+html[sizemode='maximized'] > body {
+    background-color: black !important;
+}
+
 html[sizemode='normal'][windowtype='navigator:browser'] > body {
     background-color: #40404040 !important;
 }
