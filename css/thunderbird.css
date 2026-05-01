@@ -2,6 +2,7 @@
     --tree-view-bg: black !important;
     --sidebar-background: black !important;
     --toolbar-bgcolor: black !important;
+    --layout-background-1: black !important;
 
     --treeitem-background-selected: var(--global-accent-color) !important;
     --listbox-selected-bg: var(--global-accent-color) !important;
