@@ -23,7 +23,7 @@
     body,
     .r-kemksi,
     .r-5zmot {
-        background-color: transparent !important;
+        background-color: black !important;
     }
 
     div[data-testid='HoverCard'],
@@ -120,7 +120,7 @@
     }
 
     /* hide ads */
-    div[data-testid=super-upsell-UpsellCardRenderProperties],
+    div[data-testid='super-upsell-UpsellCardRenderProperties'],
     aside[aria-label='Get Verified'],
     aside[aria-label='Subscribe to Premium'],
     div:has(> div > [aria-label='Stay organized with Bookmark Folders']) {
