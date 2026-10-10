@@ -6,7 +6,7 @@
 
 /* Hide Vertical Tabs Sidebar Title */
 #sidebar-header {
-    display: none;
+    display: none !important;
 }
 
 /* Hide Foward Button */
@@ -33,7 +33,13 @@ hbox#star-button-box {
 }
 
 /* Remove line between Vertical tabs and browser content */
-#sidebar-splitter {
+#sidebar-splitter,
+#sidebar-launcher-splitter {
+    display: none;
+}
+
+/* Hide sidebar launcher */
+#sidebar-main {
     display: none;
 }
 
@@ -85,7 +91,21 @@ html[sizemode='normal'][windowtype='navigator:browser'] > body {
 
 /* Sidebar width */
 #sidebar-box {
-    max-width: 280px;
+    max-width: 280px !important;
+    padding: 0 !important;
+}
+
+#sidebar-box,
+.browserContainer {
+    border: none !important;
+}
+
+/* Remove rounded corners, shadows and outlines around sidebar and content */
+#sidebar,
+#tabbrowser-tabbox {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 /* make shield grayscale */
@@ -163,6 +183,11 @@ html[sizemode='normal'][windowtype='navigator:browser'] > body {
 
 /* remove addressbar go button */
 #urlbar-go-button {
+    display: none !important;
+}
+
+/* remove search engine selector button */
+#urlbar-searchmode-switcher {
     display: none !important;
 }
 
