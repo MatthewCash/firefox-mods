@@ -67,21 +67,23 @@
         display: none !important;
     }
 
-    /* make header transparent */
-    * {
-        --yt-spec-base-background: transparent !important;
-    }
+    @media -moz-pref("browser.tabs.allow_transparent_browser") {
+        /* make header transparent */
+        * {
+            --yt-spec-base-background: transparent !important;
+        }
 
-    /* make background transparent */
-    html,
-    ytd-app,
-    #background,
-    #full-bleed-container,
-    #container,
-    .ytd-playlist-panel-renderer,
-    .ytSearchboxComponentInputBox,
-    #movie_player {
-        background-color: transparent !important;
+        /* make background transparent */
+        html,
+        ytd-app,
+        #background,
+        #full-bleed-container,
+        #container,
+        .ytd-playlist-panel-renderer,
+        .ytSearchboxComponentInputBox,
+        #movie_player {
+            background-color: transparent !important;
+        }
     }
 
     #frosted-glass {
